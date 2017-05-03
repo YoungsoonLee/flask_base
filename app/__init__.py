@@ -11,6 +11,7 @@ from flask_compress import Compress
 from config import config
 from .assets import app_css, app_js, vendor_css, vendor_js
 
+
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 mail = Mail()
@@ -22,6 +23,18 @@ compress = Compress()
 login_manager = LoginManager()
 login_manager.session_protection = 'strong'
 login_manager.login_view = 'account.login'
+
+# Set up logging
+import logging
+from logging.config import dictConfig
+from .logly.logging_config import logging_config
+dictConfig(logging_config)
+logger = logging.getLogger()
+
+
+# Set up BACKEND
+backend_url = config['default'].BACKEND_URL
+backend_headers = config['default'].BACKEND_HEADERS
 
 
 def create_app(config_name):

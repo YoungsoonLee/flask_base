@@ -5,13 +5,14 @@ from flask_login import (current_user, login_required, login_user, logout_user)
 from . import account
 # from .. import db
 # from ..email import send_email
-# from ..models import User
+from .models import User
 from .forms import (ChangeEmailForm, ChangePasswordForm, CreatePasswordForm,
                     LoginForm, RegistrationForm, RequestResetPasswordForm,
                     ResetPasswordForm)
 
 # add youngtip
 import requests
+from app import logger, backend_url, backend_headers
 
 @account.route('/login', methods=['GET', 'POST'])
 def login():
@@ -37,11 +38,35 @@ def register():
     """Register a new user, and send them a confirmation email."""
     form = RegistrationForm()
     if form.validate_on_submit():
-        # add youngtip
-        # using Frest
-        #r = requests.get('https://api.github.com/events')
-        #print(r)
-        pass
+        # add youngtip using Frest backend
+        # TODO: requests error handling
+        url = backend_url+'users'
+        data = {
+                'email': form.email.data,
+                'username': form.first_name.data+','+form.last_name.data,
+                'password': form.password.data
+                }
+        r = requests.post(url, headers=backend_headers, data=data).json()
+        logger.info(r)
+        # TODO: check success or not
+        user = User(
+            id = r['id'],
+            username=form.first_name.data+','+form.last_name.data,
+            email=form.email.data)
+        confirm_token = user.generate_confirmation_token()
+        confirm_link = url_for('account.confirm', token=confirm_token, _external=True)
+        # TODO: RQ
+        """
+        get_queue().enqueue(
+            send_email,
+            recipient=user.email,
+            subject='Confirm Your Account',
+            template='account/email/confirm',
+            user=user,
+            confirm_link=confirm_link)
+        """
+        flash('A confirmation link has been sent to {}.'.format(user.email), 'warning')
+        return redirect(url_for('main.index'))
 
         """
         user = User(

@@ -38,7 +38,7 @@ class Config:
     EMAIL_SUBJECT_PREFIX = '[{}]'.format(APP_NAME)
     EMAIL_SENDER = '{app_name} Admin <{email}>'.format(app_name=APP_NAME, email=MAIL_USERNAME)
 
-    # REDIS_URL = os.getenv('REDISTOGO_URL') or 'http://localhost:6379'
+    REDIS_URL = os.getenv('REDISTOGO_URL') or 'http://localhost:6379'
 
     RAYGUN_APIKEY = os.environ.get('RAYGUN_APIKEY')
 
@@ -56,6 +56,10 @@ class Config:
     RQ_DEFAULT_PASSWORD = url.password
     RQ_DEFAULT_DB = 0
     """
+
+    # for backend Frest
+    BACKEND_URL = 'http://127.0.0.1:3000/api/v1/'
+    BACKEND_HEADERS = {'Accept': 'application/json'}
 
     @staticmethod
     def init_app(app):

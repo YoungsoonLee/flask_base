@@ -1,0 +1,628 @@
+INFO 2017-05-02 12:12:34,984 { module name : _internal Line no : 87}  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO 2017-05-02 12:12:34,986 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 12:12:35,501 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 12:12:35,515 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+DEBUG 2017-05-02 12:12:49,959 { module name : connectionpool Line no : 818} Starting new HTTPS connection (1): api.github.com
+DEBUG 2017-05-02 12:12:50,480 { module name : connectionpool Line no : 395} https://api.github.com:443 "GET /events HTTP/1.1" 200 None
+INFO 2017-05-02 12:12:50,488 { module name : views Line no : 45} Info
+INFO 2017-05-02 12:12:50,598 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 12:12:50] "POST /account/register HTTP/1.1" 200 -
+DEBUG 2017-05-02 12:12:55,070 { module name : connectionpool Line no : 818} Starting new HTTPS connection (1): api.github.com
+DEBUG 2017-05-02 12:12:55,544 { module name : connectionpool Line no : 395} https://api.github.com:443 "GET /events HTTP/1.1" 200 None
+INFO 2017-05-02 12:12:55,553 { module name : views Line no : 45} Info
+INFO 2017-05-02 12:12:55,563 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 12:12:55] "POST /account/register HTTP/1.1" 200 -
+INFO 2017-05-02 12:14:39,718 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/__init__.py', reloading
+INFO 2017-05-02 12:14:39,800 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 12:14:40,591 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 12:14:40,604 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+INFO 2017-05-02 12:15:07,863 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading
+INFO 2017-05-02 12:15:07,917 { module name : _internal Line no : 87}  * Restarting with stat
+INFO 2017-05-02 12:17:15,000 { module name : _internal Line no : 87}  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO 2017-05-02 12:17:15,001 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 12:17:15,531 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 12:17:15,545 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+INFO 2017-05-02 12:17:24,640 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading
+INFO 2017-05-02 12:17:24,692 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 12:17:25,257 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 12:17:25,273 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+DEBUG 2017-05-02 12:17:33,717 { module name : connectionpool Line no : 818} Starting new HTTPS connection (1): api.github.com
+DEBUG 2017-05-02 12:17:34,276 { module name : connectionpool Line no : 395} https://api.github.com:443 "GET /events HTTP/1.1" 200 None
+INFO 2017-05-02 12:17:34,293 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 12:17:34] "POST /account/register HTTP/1.1" 500 -
+INFO 2017-05-02 12:17:34,378 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 12:17:34] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO 2017-05-02 12:17:34,380 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 12:17:34] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO 2017-05-02 12:17:34,382 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 12:17:34] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO 2017-05-02 12:17:34,428 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 12:17:34] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO 2017-05-02 12:17:34,507 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 12:17:34] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO 2017-05-02 12:17:34,713 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 12:17:34] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO 2017-05-02 12:17:34,868 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 12:17:34] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO 2017-05-02 12:18:16,782 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading
+INFO 2017-05-02 12:18:16,836 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 12:18:17,343 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 12:18:17,352 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+INFO 2017-05-02 12:18:31,490 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/__init__.py', reloading
+INFO 2017-05-02 12:18:31,534 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 12:18:32,036 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 12:18:32,045 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+INFO 2017-05-02 12:19:22,548 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/__init__.py', reloading
+INFO 2017-05-02 12:19:22,595 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 12:19:23,122 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 12:19:23,131 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+INFO 2017-05-02 12:19:43,325 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading
+INFO 2017-05-02 12:19:43,380 { module name : _internal Line no : 87}  * Restarting with stat
+INFO 2017-05-02 12:20:14,783 { module name : _internal Line no : 87}  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO 2017-05-02 12:20:14,784 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 12:20:15,296 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 12:20:15,312 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+DEBUG 2017-05-02 12:20:26,186 { module name : connectionpool Line no : 818} Starting new HTTPS connection (1): api.github.com
+DEBUG 2017-05-02 12:20:26,619 { module name : connectionpool Line no : 395} https://api.github.com:443 "GET /events HTTP/1.1" 200 None
+INFO 2017-05-02 12:20:26,625 { module name : views Line no : 44} Info
+INFO 2017-05-02 12:20:26,741 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 12:20:26] "POST /account/register HTTP/1.1" 200 -
+INFO 2017-05-02 13:27:46,741 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:27:46] "GET /account/login HTTP/1.1" 200 -
+INFO 2017-05-02 13:27:49,125 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:27:49] "GET /account/reset-password HTTP/1.1" 200 -
+INFO 2017-05-02 13:33:57,162 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading
+INFO 2017-05-02 13:33:57,236 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 13:33:58,097 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 13:33:58,129 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+INFO 2017-05-02 13:34:49,415 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:34:49] "POST /account/register HTTP/1.1" 400 -
+INFO 2017-05-02 13:34:49,985 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:34:49] "GET /favicon.ico HTTP/1.1" 404 -
+INFO 2017-05-02 13:35:01,073 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:35:01] "POST /account/register HTTP/1.1" 400 -
+INFO 2017-05-02 13:35:12,030 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:35:12] "GET / HTTP/1.1" 200 -
+INFO 2017-05-02 13:35:12,276 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:35:12] "GET /static/styles/app.css?873aca08 HTTP/1.1" 200 -
+INFO 2017-05-02 13:35:12,280 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:35:12] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 200 -
+INFO 2017-05-02 13:35:14,960 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:35:14] "GET /account/register HTTP/1.1" 200 -
+DEBUG 2017-05-02 13:35:30,386 { module name : connectionpool Line no : 818} Starting new HTTPS connection (1): api.github.com
+DEBUG 2017-05-02 13:35:30,851 { module name : connectionpool Line no : 395} https://api.github.com:443 "GET /events HTTP/1.1" 200 None
+INFO 2017-05-02 13:35:30,959 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:35:30] "POST /account/register HTTP/1.1" 200 -
+INFO 2017-05-02 13:37:21,035 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading
+INFO 2017-05-02 13:37:21,089 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 13:37:21,891 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 13:37:21,904 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+DEBUG 2017-05-02 13:37:26,340 { module name : connectionpool Line no : 818} Starting new HTTPS connection (1): api.github.com
+DEBUG 2017-05-02 13:37:26,889 { module name : connectionpool Line no : 395} https://api.github.com:443 "GET /events HTTP/1.1" 200 None
+INFO 2017-05-02 13:37:27,060 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:37:27] "POST /account/register HTTP/1.1" 200 -
+DEBUG 2017-05-02 13:37:48,272 { module name : connectionpool Line no : 818} Starting new HTTPS connection (1): api.github.com
+DEBUG 2017-05-02 13:37:48,803 { module name : connectionpool Line no : 395} https://api.github.com:443 "GET /events HTTP/1.1" 200 None
+INFO 2017-05-02 13:37:48,820 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:37:48] "POST /account/register HTTP/1.1" 200 -
+INFO 2017-05-02 13:43:33,451 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading
+INFO 2017-05-02 13:43:33,498 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 13:43:34,318 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 13:43:34,330 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+DEBUG 2017-05-02 13:43:46,783 { module name : connectionpool Line no : 207} Starting new HTTP connection (1): 127.0.0.1
+DEBUG 2017-05-02 13:43:46,800 { module name : connectionpool Line no : 395} http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 406 95
+INFO 2017-05-02 13:43:46,801 { module name : views Line no : 51} <Response [406]>
+INFO 2017-05-02 13:43:46,926 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:43:46] "POST /account/register HTTP/1.1" 200 -
+INFO 2017-05-02 13:43:46,999 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:43:46] "GET /static/styles/app.css?873aca08 HTTP/1.1" 304 -
+INFO 2017-05-02 13:43:47,008 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:43:47] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 304 -
+INFO 2017-05-02 13:43:47,012 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:43:47] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:43:47,015 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:43:47] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:43:47,017 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:43:47] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:43:47,021 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:43:47] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:43:47,025 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:43:47] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:43:47,408 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:43:47] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 304 -
+DEBUG 2017-05-02 13:44:29,577 { module name : connectionpool Line no : 207} Starting new HTTP connection (1): 127.0.0.1
+DEBUG 2017-05-02 13:44:29,583 { module name : connectionpool Line no : 395} http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 406 95
+INFO 2017-05-02 13:44:29,584 { module name : views Line no : 51} <Response [406]>
+INFO 2017-05-02 13:44:29,592 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:44:29] "POST /account/register HTTP/1.1" 200 -
+INFO 2017-05-02 13:46:48,120 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading
+INFO 2017-05-02 13:46:48,197 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 13:46:48,922 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 13:46:48,933 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+INFO 2017-05-02 13:48:09,679 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading
+INFO 2017-05-02 13:48:09,729 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 13:48:10,512 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 13:48:10,529 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+INFO 2017-05-02 13:49:16,157 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading
+INFO 2017-05-02 13:49:16,214 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 13:49:16,993 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 13:49:17,005 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+DEBUG 2017-05-02 13:49:23,246 { module name : connectionpool Line no : 207} Starting new HTTP connection (1): 127.0.0.1
+DEBUG 2017-05-02 13:49:23,251 { module name : connectionpool Line no : 395} http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 406 95
+INFO 2017-05-02 13:49:23,252 { module name : views Line no : 51} {'code': 406, 'message': 'Please check request accept again.', 'status': 'fail'}
+INFO 2017-05-02 13:49:23,365 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:49:23] "POST /account/register HTTP/1.1" 200 -
+INFO 2017-05-02 13:49:23,544 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:49:23] "GET /static/styles/app.css?873aca08 HTTP/1.1" 304 -
+INFO 2017-05-02 13:49:23,547 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:49:23] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 304 -
+INFO 2017-05-02 13:49:23,552 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:49:23] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:49:23,557 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:49:23] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:49:23,563 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:49:23] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:49:23,568 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:49:23] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:49:23,575 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:49:23] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:49:23,959 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:49:23] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 304 -
+DEBUG 2017-05-02 13:49:41,350 { module name : connectionpool Line no : 207} Starting new HTTP connection (1): 127.0.0.1
+DEBUG 2017-05-02 13:49:41,352 { module name : connectionpool Line no : 395} http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 406 95
+INFO 2017-05-02 13:49:41,353 { module name : views Line no : 51} {'code': 406, 'message': 'Please check request accept again.', 'status': 'fail'}
+INFO 2017-05-02 13:49:41,362 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:49:41] "POST /account/register HTTP/1.1" 200 -
+INFO 2017-05-02 13:51:30,222 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading
+INFO 2017-05-02 13:51:30,303 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 13:51:31,006 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 13:51:31,017 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+DEBUG 2017-05-02 13:51:40,920 { module name : connectionpool Line no : 207} Starting new HTTP connection (1): 127.0.0.1
+DEBUG 2017-05-02 13:51:40,923 { module name : connectionpool Line no : 395} http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 127
+INFO 2017-05-02 13:51:40,925 { module name : views Line no : 51} {'code': 400, 'field': 'Password', 'message': 'Field must be at least 5 characters long.', 'status': 'fail'}
+INFO 2017-05-02 13:51:41,037 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:51:41] "POST /account/register HTTP/1.1" 200 -
+INFO 2017-05-02 13:51:41,212 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:51:41] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 304 -
+INFO 2017-05-02 13:51:41,219 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:51:41] "GET /static/styles/app.css?873aca08 HTTP/1.1" 304 -
+INFO 2017-05-02 13:51:41,223 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:51:41] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:51:41,228 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:51:41] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:51:41,244 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:51:41] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:51:41,249 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:51:41] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:51:41,253 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:51:41] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 304 -
+INFO 2017-05-02 13:51:41,431 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:51:41] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 304 -
+DEBUG 2017-05-02 13:51:52,879 { module name : connectionpool Line no : 207} Starting new HTTP connection (1): 127.0.0.1
+DEBUG 2017-05-02 13:51:52,883 { module name : connectionpool Line no : 395} http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 127
+INFO 2017-05-02 13:51:52,884 { module name : views Line no : 51} {'code': 400, 'field': 'Password', 'message': 'Field must be at least 5 characters long.', 'status': 'fail'}
+INFO 2017-05-02 13:51:52,891 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:51:52] "POST /account/register HTTP/1.1" 200 -
+INFO 2017-05-02 13:52:07,370 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading
+INFO 2017-05-02 13:52:07,426 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2017-05-02 13:52:08,163 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2017-05-02 13:52:08,180 { module name : _internal Line no : 87}  * Debugger PIN: 133-044-709
+DEBUG 2017-05-02 13:52:13,932 { module name : connectionpool Line no : 207} Starting new HTTP connection (1): 127.0.0.1
+DEBUG 2017-05-02 13:52:14,258 { module name : connectionpool Line no : 395} http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 45
+INFO 2017-05-02 13:52:14,259 { module name : views Line no : 51} {'code': 201, 'status': 'success'}
+INFO 2017-05-02 13:52:14,383 { module name : _internal Line no : 87} 127.0.0.1 - - [02/May/2017 13:52:14] "POST /account/register HTTP/1.1" 200 -
+INFO 2017-05-02 14:01:03,360 { module name : _internal Line no : 87}  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/logly/logging_config.py', reloading
+INFO 2017-05-02 14:01:03,450 { module name : _internal Line no : 87}  * Restarting with stat
+[2017-05-02 14:01:04,256] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87} WARNING -  * Debugger is active!
+[2017-05-02 14:01:04,271] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87} INFO -  * Debugger PIN: 133-044-709
+[2017-05-02 14:01:12,771] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1
+[2017-05-02 14:01:13,063] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 169
+[2017-05-02 14:01:13,064] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py:51} INFO - {'code': 400, 'field': {'label': 'User Name', 'name': 'username'}, 'message': "'youngtip' is already exists.", 'status': 'fail'}
+[2017-05-02 14:01:13,175] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87} INFO - 127.0.0.1 - - [02/May/2017 14:01:13] "POST /account/register HTTP/1.1" 200 -
+[2017-05-02 14:01:13,411] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87} INFO - 127.0.0.1 - - [02/May/2017 14:01:13] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 304 -
+[2017-05-02 14:01:13,448] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87} INFO - 127.0.0.1 - - [02/May/2017 14:01:13] "GET /static/styles/app.css?873aca08 HTTP/1.1" 304 -
+[2017-05-02 14:01:13,452] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87} INFO - 127.0.0.1 - - [02/May/2017 14:01:13] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 304 -
+[2017-05-02 14:01:13,460] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87} INFO - 127.0.0.1 - - [02/May/2017 14:01:13] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 304 -
+[2017-05-02 14:01:13,466] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87} INFO - 127.0.0.1 - - [02/May/2017 14:01:13] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 304 -
+[2017-05-02 14:01:13,471] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87} INFO - 127.0.0.1 - - [02/May/2017 14:01:13] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 304 -
+[2017-05-02 14:01:13,488] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87} INFO - 127.0.0.1 - - [02/May/2017 14:01:13] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 304 -
+[2017-05-02 14:01:13,824] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87} INFO - 127.0.0.1 - - [02/May/2017 14:01:13] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 304 -
+[2017-05-02 14:01:29,652] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1
+[2017-05-02 14:01:30,066] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/requests/packages/urllib3/connectionpool.py:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 169
+[2017-05-02 14:01:30,067] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py:51} INFO - {'code': 400, 'field': {'label': 'User Name', 'name': 'username'}, 'message': "'youngtip' is already exists.", 'status': 'fail'}
+[2017-05-02 14:01:30,076] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87} INFO - 127.0.0.1 - - [02/May/2017 14:01:30] "POST /account/register HTTP/1.1" 200 -
+[2017-05-02 14:02:23,075] {/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/logly/logging_config.py', reloading
+INFO 2017-05-02 14:02:23,129 { module name : _internal Line no : 87}  * Restarting with stat
+[2017-05-02 14:02:23,877] {werkzeug:87} WARNING -  * Debugger is active!
+[2017-05-02 14:02:23,888] {werkzeug:87} INFO -  * Debugger PIN: 133-044-709
+[2017-05-02 14:02:32,075] {requests.packages.urllib3.connectionpool:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1
+[2017-05-02 14:02:32,530] {requests.packages.urllib3.connectionpool:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 169
+[2017-05-02 14:02:32,531] {root:51} INFO - {'code': 400, 'field': {'label': 'User Name', 'name': 'username'}, 'message': "'youngtip' is already exists.", 'status': 'fail'}
+[2017-05-02 14:02:32,657] {werkzeug:87} INFO - 127.0.0.1 - - [02/May/2017 14:02:32] "POST /account/register HTTP/1.1" 200 -
+[2017-05-02 14:03:35,569] {werkzeug:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/logly/logging_config.py', reloading
+INFO 2017-05-02 14:03:35,617 { module name : _internal Line no : 87}  * Restarting with stat
+[2017-05-02 14:03:36,420] {_log:87} WARNING -  * Debugger is active!
+[2017-05-02 14:03:36,432] {_log:87} INFO -  * Debugger PIN: 133-044-709
+[2017-05-02 14:03:47,717] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1
+[2017-05-02 14:03:47,986] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 169
+[2017-05-02 14:03:47,988] {register:51} INFO - {'code': 400, 'field': {'label': 'User Name', 'name': 'username'}, 'message': "'youngtip' is already exists.", 'status': 'fail'}
+[2017-05-02 14:03:48,118] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:03:48] "POST /account/register HTTP/1.1" 200 -
+[2017-05-02 14:04:32,985] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/logly/logging_config.py', reloading
+INFO 2017-05-02 14:04:33,048 { module name : _internal Line no : 87}  * Restarting with stat
+2017-05-02 14:04:33,844 | /Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87 | _log | WARNING |  * Debugger is active! 
+2017-05-02 14:04:33,858 | /Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87 | _log | INFO |  * Debugger PIN: 133-044-709 
+2017-05-02 14:05:13,229 | /Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/venv/lib/python3.6/site-packages/werkzeug/_internal.py:87 | _log | INFO |  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/logly/logging_config.py', reloading 
+INFO 2017-05-02 14:05:13,276 { module name : _internal Line no : 87}  * Restarting with stat
+2017-05-02 14:05:14,049 | _log | 87 | WARNING |  * Debugger is active! 
+2017-05-02 14:05:14,060 | _log | 87 | INFO |  * Debugger PIN: 133-044-709 
+2017-05-02 14:05:20,672 | _new_conn | 207 | DEBUG | Starting new HTTP connection (1): 127.0.0.1 
+2017-05-02 14:05:20,952 | _make_request | 395 | DEBUG | http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 169 
+2017-05-02 14:05:20,953 | register | 51 | INFO | {'code': 400, 'field': {'label': 'User Name', 'name': 'username'}, 'message': "'youngtip' is already exists.", 'status': 'fail'} 
+2017-05-02 14:05:21,065 | _log | 87 | INFO | 127.0.0.1 - - [02/May/2017 14:05:21] "POST /account/register HTTP/1.1" 200 - 
+2017-05-02 14:07:03,065 | _log | 87 | INFO |  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/logly/logging_config.py', reloading 
+INFO 2017-05-02 14:07:03,119 { module name : _internal Line no : 87}  * Restarting with stat
+[2017-05-02 14:07:03,939] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:07:03,951] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:23:20,115] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/config.py', reloading 
+INFO 2017-05-02 14:23:20,203 { module name : _internal Line no : 87}  * Restarting with stat
+[2017-05-02 14:23:20,965] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:23:20,977] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:24:06,396] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+INFO 2017-05-02 14:24:06,440 { module name : _internal Line no : 87}  * Restarting with stat
+[2017-05-02 14:27:05,323] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-02 14:27:05,324] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:27:05,800] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:27:05,814] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:27:19,946] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 14:27:19,993] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:27:20,558] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:27:20,569] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:27:53,895] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 14:27:53,941] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:27:54,504] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:27:54,525] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:27:59,313] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:27:59] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-02 14:28:08,017] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:28:08] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-02 14:28:08,084] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:28:08] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-02 14:28:08,087] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:28:08] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-02 14:28:08,088] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:28:08] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-02 14:28:08,164] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:28:08] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 14:28:08,244] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:28:08] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-02 14:28:08,441] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:28:08] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 14:28:08,710] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:28:08] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 14:29:59,688] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/__init__.py', reloading 
+[2017-05-02 14:29:59,756] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:36:51,735] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-02 14:36:51,736] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:36:52,228] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:36:52,241] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:37:00,321] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 14:37:00,381] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:37:07,671] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-02 14:37:07,672] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:37:08,153] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:37:08,162] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:37:12,568] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:37:12] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-02 14:37:12,871] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:37:12] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-02 14:37:12,878] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:37:12] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-02 14:37:12,880] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:37:12] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-02 14:37:12,921] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:37:12] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 14:37:12,993] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:37:12] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-02 14:37:27,350] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 14:37:27,401] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:41:45,017] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-02 14:41:45,018] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:41:45,500] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:41:45,514] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:41:57,633] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 14:41:57,701] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:42:37,410] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-02 14:42:37,412] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:42:37,886] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:42:37,896] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:42:42,948] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 14:42:43,003] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:42:43,546] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:42:43,555] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:42:46,820] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:42:46] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-02 14:42:47,114] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:42:47] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-02 14:42:47,117] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:42:47] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-02 14:42:47,119] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:42:47] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-02 14:42:47,170] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:42:47] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 14:42:47,244] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:42:47] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-02 14:43:13,291] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-02 14:43:13,291] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:43:13,765] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:43:13,774] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:43:17,402] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:43:17] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-02 14:43:17,701] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:43:17] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-02 14:43:17,707] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:43:17] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-02 14:43:17,709] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:43:17] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-02 14:43:17,755] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:43:17] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 14:43:17,831] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:43:17] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-02 14:44:28,469] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/manage.py', reloading 
+[2017-05-02 14:44:28,529] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:44:29,272] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:44:29,289] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:45:38,953] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/__init__.py', reloading 
+[2017-05-02 14:45:38,999] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:50:16,639] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-02 14:50:16,641] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:50:17,108] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:50:17,128] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:50:25,827] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:25] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-02 14:50:25,903] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:25] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 304 - 
+[2017-05-02 14:50:25,907] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:25] "GET /static/styles/app.css?873aca08 HTTP/1.1" 304 - 
+[2017-05-02 14:50:25,911] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:25] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 304 - 
+[2017-05-02 14:50:25,915] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:25] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 304 - 
+[2017-05-02 14:50:25,919] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:25] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 304 - 
+[2017-05-02 14:50:25,923] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:25] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 304 - 
+[2017-05-02 14:50:25,926] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:25] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 304 - 
+[2017-05-02 14:50:26,088] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:26] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 304 - 
+[2017-05-02 14:50:34,425] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 14:50:34,454] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1//users HTTP/1.1" 404 233 
+[2017-05-02 14:50:34,467] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:34] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-02 14:50:34,545] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:34] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-02 14:50:34,547] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:34] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-02 14:50:34,549] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:34] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-02 14:50:34,597] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:34] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 14:50:34,678] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:34] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-02 14:50:34,869] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:34] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 14:50:35,006] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:50:35] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 14:52:02,143] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 14:52:02,200] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:52:03,010] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:52:03,025] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:52:12,561] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 14:52:12,564] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1//users HTTP/1.1" 404 233 
+[2017-05-02 14:52:12,564] {register:50} INFO - <Response [404]> 
+[2017-05-02 14:52:12,670] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:52:12] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 14:52:31,905] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 14:52:31,907] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1//users HTTP/1.1" 404 233 
+[2017-05-02 14:52:31,908] {register:50} INFO - <Response [404]> 
+[2017-05-02 14:52:31,916] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:52:31] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 14:52:32,212] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:52:32] "GET /static/styles/app.css?873aca08 HTTP/1.1" 304 - 
+[2017-05-02 14:52:32,216] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:52:32] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 304 - 
+[2017-05-02 14:52:32,220] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:52:32] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 304 - 
+[2017-05-02 14:52:32,224] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:52:32] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 304 - 
+[2017-05-02 14:52:32,228] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:52:32] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 304 - 
+[2017-05-02 14:52:32,231] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:52:32] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 304 - 
+[2017-05-02 14:52:32,238] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:52:32] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 304 - 
+[2017-05-02 14:52:32,633] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:52:32] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 304 - 
+[2017-05-02 14:52:35,449] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 14:52:35,451] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1//users HTTP/1.1" 404 233 
+[2017-05-02 14:52:35,452] {register:50} INFO - <Response [404]> 
+[2017-05-02 14:52:35,461] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:52:35] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 14:52:51,902] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-02 14:52:51,903] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:52:52,378] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:52:52,391] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:52:59,838] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 14:52:59,839] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1//users HTTP/1.1" 404 233 
+[2017-05-02 14:52:59,840] {register:50} INFO - <Response [404]> 
+[2017-05-02 14:52:59,947] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:52:59] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 14:53:58,039] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/__init__.py', reloading 
+[2017-05-02 14:53:58,108] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:53:58,730] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:53:58,743] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:54:21,931] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 14:54:21,991] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:54:22,521] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:54:22,533] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:54:25,739] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 14:54:26,017] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 169 
+[2017-05-02 14:54:26,018] {register:50} INFO - <Response [400]> 
+[2017-05-02 14:54:26,132] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:54:26] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 14:54:38,681] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 14:54:38,753] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:54:39,311] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:54:39,324] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:54:42,475] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 14:54:42,744] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 169 
+[2017-05-02 14:54:42,745] {register:50} INFO - {'code': 400, 'field': {'label': 'User Name', 'name': 'username'}, 'message': "'youngtip' is already exists.", 'status': 'fail'} 
+[2017-05-02 14:54:42,865] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:54:42] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 14:55:27,809] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 14:55:27,870] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:55:28,386] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:55:28,397] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:55:32,099] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 14:55:32,376] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 45 
+[2017-05-02 14:55:32,377] {register:50} INFO - {'code': 201, 'status': 'success'} 
+[2017-05-02 14:55:32,499] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:55:32] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 14:56:49,225] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 14:56:49,279] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:56:49,971] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:56:49,983] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:56:57,045] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 14:56:57,101] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:56:57,600] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:56:57,611] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:57:06,093] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 14:57:06,096] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 127 
+[2017-05-02 14:57:06,098] {register:50} INFO - {'code': 400, 'field': 'Password', 'message': 'Field must be at least 5 characters long.', 'status': 'fail'} 
+[2017-05-02 14:57:06,217] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:57:06] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 14:57:16,630] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 14:57:16,635] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 127 
+[2017-05-02 14:57:16,636] {register:50} INFO - {'code': 400, 'field': 'Password', 'message': 'Field must be at least 5 characters long.', 'status': 'fail'} 
+[2017-05-02 14:57:16,645] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:57:16] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 14:57:38,565] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 14:57:38,567] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 127 
+[2017-05-02 14:57:38,568] {register:50} INFO - {'code': 400, 'field': 'Password', 'message': 'Field must be at least 5 characters long.', 'status': 'fail'} 
+[2017-05-02 14:57:38,576] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:57:38] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 14:58:00,219] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 14:58:00,278] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 14:58:01,059] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 14:58:01,072] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 14:58:06,087] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 14:58:06,363] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 45 
+[2017-05-02 14:58:06,364] {register:50} INFO - {'code': 201, 'status': 'success'} 
+[2017-05-02 14:58:06,489] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 14:58:06] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 15:00:36,478] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 15:00:36,565] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 15:00:37,647] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 15:00:37,666] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 15:00:47,797] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 15:00:48,068] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 164 
+[2017-05-02 15:00:48,069] {register:50} INFO - {'code': 400, 'field': {'label': 'User Name', 'name': 'username'}, 'message': "'1 1' is already exists.", 'status': 'fail'} 
+[2017-05-02 15:00:48,186] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 15:00:48] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 15:01:13,031] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 15:01:13,302] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 45 
+[2017-05-02 15:01:13,303] {register:50} INFO - {'code': 201, 'status': 'success'} 
+[2017-05-02 15:01:13,312] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 15:01:13] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 15:02:12,549] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 15:02:12,598] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 15:02:13,386] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 15:02:13,397] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 15:02:26,130] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 15:02:26,400] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 45 
+[2017-05-02 15:02:26,401] {register:50} INFO - {'code': 201, 'status': 'success'} 
+[2017-05-02 15:02:26,519] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 15:02:26] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 15:03:13,020] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 15:03:13,070] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 15:03:13,807] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 15:03:13,819] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 15:03:47,153] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 15:03:47,221] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 15:03:47,998] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 15:03:48,010] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 16:11:54,532] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:11:54] "POST /account/register HTTP/1.1" 400 - 
+[2017-05-02 16:11:55,085] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:11:55] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-02 16:12:13,939] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:12:13] "POST /account/register HTTP/1.1" 400 - 
+[2017-05-02 16:12:23,658] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:12:23] "POST /account/register HTTP/1.1" 400 - 
+[2017-05-02 16:12:30,523] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:12:30] "GET / HTTP/1.1" 200 - 
+[2017-05-02 16:12:33,271] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:12:33] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-02 16:12:43,471] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 16:12:43,986] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 61 
+[2017-05-02 16:12:43,987] {register:50} INFO - {'code': 201, 'data': 14, 'status': 'success'} 
+[2017-05-02 16:12:43,995] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:12:43] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 16:13:56,394] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 16:13:56,883] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 59 
+[2017-05-02 16:13:56,885] {register:50} INFO - {'code': 201, 'id': 15, 'status': 'success'} 
+[2017-05-02 16:13:56,896] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:13:56] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 16:17:36,046] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 16:17:36,130] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 16:17:36,944] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 16:17:36,956] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 16:17:44,712] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 16:17:45,014] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 400 164 
+[2017-05-02 16:17:45,015] {register:50} INFO - {'code': 400, 'field': {'label': 'User Name', 'name': 'username'}, 'message': "'5 5' is already exists.", 'status': 'fail'} 
+[2017-05-02 16:17:45,025] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:17:45] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-02 16:17:45,152] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:17:45] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-02 16:17:45,171] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:17:45] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-02 16:17:45,174] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:17:45] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-02 16:17:45,273] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:17:45] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 16:17:45,363] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:17:45] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-02 16:17:45,543] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:17:45] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 16:18:02,546] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:18:02] "GET / HTTP/1.1" 200 - 
+[2017-05-02 16:18:04,520] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:18:04] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-02 16:18:13,979] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 16:18:14,457] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 59 
+[2017-05-02 16:18:14,458] {register:50} INFO - {'code': 201, 'id': 17, 'status': 'success'} 
+[2017-05-02 16:18:14,472] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:18:14] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-02 16:18:14,586] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:18:14] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-02 16:18:14,589] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:18:14] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-02 16:18:14,591] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:18:14] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-02 16:18:14,674] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:18:14] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 16:18:14,761] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:18:14] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-02 16:18:14,821] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:18:14] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 16:18:15,142] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:18:15] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 16:19:08,821] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 16:19:08,875] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 16:19:09,684] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 16:19:09,696] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 16:19:24,643] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 16:19:25,119] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 59 
+[2017-05-02 16:19:25,120] {register:51} INFO - {'code': 201, 'id': 18, 'status': 'success'} 
+[2017-05-02 16:19:25,120] {register:52} INFO - 18 
+[2017-05-02 16:19:25,233] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:19:25] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 16:19:56,140] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 16:19:56,183] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 16:19:56,939] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 16:19:56,951] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 16:20:22,187] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 16:20:22,254] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 16:20:22,765] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 16:20:22,776] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 16:20:33,130] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 16:20:33,670] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 59 
+[2017-05-02 16:20:33,671] {register:50} INFO - {'code': 201, 'id': 19, 'status': 'success'} 
+[2017-05-02 16:20:33,671] {register:51} INFO - 19 
+[2017-05-02 16:20:33,787] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:20:33] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 16:21:08,207] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 16:21:08,273] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 16:23:00,166] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-02 16:23:00,167] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 16:23:00,648] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 16:23:00,663] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 16:23:10,686] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 16:23:11,163] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 59 
+[2017-05-02 16:23:11,164] {register:50} INFO - {'code': 201, 'id': 20, 'status': 'success'} 
+[2017-05-02 16:23:11,165] {register:52} INFO - b'eyJhbGciOiJIUzI1NiIsImlhdCI6MTQ5Mzc2NzM5MSwiZXhwIjoxNDk0MzcyMTkxfQ.eyJjb25maXJtIjoyMH0.KtR0kJSFSfbjY1yGjoK0RpfqSF7E1BxyDcoM59EP2FA' 
+[2017-05-02 16:23:11,279] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:23:11] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 16:24:46,849] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 16:24:47,167] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 500 None 
+[2017-05-02 16:24:47,180] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:24:47] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-02 16:24:47,292] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:24:47] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-02 16:24:47,295] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:24:47] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-02 16:24:47,297] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:24:47] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-02 16:24:47,344] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:24:47] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 16:24:47,435] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:24:47] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-02 16:24:47,699] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:24:47] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 16:24:47,744] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:24:47] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 16:25:36,395] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 16:25:36,700] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 500 None 
+[2017-05-02 16:25:36,709] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:25:36] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-02 16:25:36,812] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:25:36] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-02 16:25:36,815] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:25:36] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-02 16:25:36,818] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:25:36] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-02 16:25:36,869] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:25:36] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 16:25:36,957] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:25:36] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-02 16:25:37,247] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:25:37] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 16:26:45,098] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET / HTTP/1.1" 200 - 
+[2017-05-02 16:26:45,135] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 - 
+[2017-05-02 16:26:45,190] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET /apple-touch-icon.png HTTP/1.1" 404 - 
+[2017-05-02 16:26:45,202] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-02 16:26:45,217] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 - 
+[2017-05-02 16:26:45,228] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET /apple-touch-icon.png HTTP/1.1" 404 - 
+[2017-05-02 16:26:45,238] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-02 16:26:45,253] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET / HTTP/1.1" 200 - 
+[2017-05-02 16:26:45,270] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 - 
+[2017-05-02 16:26:45,280] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET /apple-touch-icon.png HTTP/1.1" 404 - 
+[2017-05-02 16:26:45,292] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-02 16:26:45,302] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 - 
+[2017-05-02 16:26:45,311] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET /apple-touch-icon.png HTTP/1.1" 404 - 
+[2017-05-02 16:26:45,322] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:45] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-02 16:26:50,571] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:50] "GET / HTTP/1.1" 200 - 
+[2017-05-02 16:26:51,233] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:51] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 - 
+[2017-05-02 16:26:51,244] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:51] "GET /apple-touch-icon.png HTTP/1.1" 404 - 
+[2017-05-02 16:26:56,931] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:26:56] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-02 16:27:05,360] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 16:27:05,857] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 58 
+[2017-05-02 16:27:05,858] {register:50} INFO - {'code': 201, 'id': 1, 'status': 'success'} 
+[2017-05-02 16:27:05,859] {register:52} INFO - b'eyJhbGciOiJIUzI1NiIsImlhdCI6MTQ5Mzc2NzYyNSwiZXhwIjoxNDk0MzcyNDI1fQ.eyJjb25maXJtIjoxfQ.OdNrEZLudgtf7fTj9hnqCwRmqZ5q976z2WK0lQX067E' 
+[2017-05-02 16:27:05,868] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 16:27:05] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 16:58:49,348] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 16:58:49,444] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 16:58:50,261] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 16:58:50,277] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 16:59:12,496] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 16:59:12,539] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 16:59:13,276] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 16:59:13,286] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 16:59:29,441] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 16:59:29,503] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 16:59:30,254] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 16:59:30,268] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 16:59:52,481] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 16:59:52,541] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 16:59:53,469] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 16:59:53,480] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 17:00:12,195] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 17:00:12,752] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 58 
+[2017-05-02 17:00:12,753] {register:50} INFO - {'code': 201, 'id': 2, 'status': 'success'} 
+[2017-05-02 17:00:12,754] {register:52} INFO - b'eyJhbGciOiJIUzI1NiIsImlhdCI6MTQ5Mzc2OTYxMiwiZXhwIjoxNDk0Mzc0NDEyfQ.eyJjb25maXJtIjoyfQ.Rl8AUVGrO7qZEuR4UQdf7-5ImGog3aq2LpxYq40f4po' 
+[2017-05-02 17:00:12,765] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:00:12] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-02 17:00:12,874] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:00:12] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-02 17:00:12,878] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:00:12] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-02 17:00:12,881] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:00:12] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-02 17:00:12,978] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:00:12] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 17:00:13,073] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:00:13] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-02 17:00:13,251] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:00:13] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 17:00:13,504] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:00:13] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-02 17:01:38,491] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/models.py', reloading 
+[2017-05-02 17:01:38,546] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 17:05:48,082] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-02 17:05:48,084] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 17:05:48,573] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 17:05:48,588] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 17:06:03,324] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 17:06:03,803] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 58 
+[2017-05-02 17:06:03,804] {register:50} INFO - {'code': 201, 'id': 3, 'status': 'success'} 
+[2017-05-02 17:06:03,805] {register:57} INFO - b'eyJhbGciOiJIUzI1NiIsImlhdCI6MTQ5Mzc2OTk2MywiZXhwIjoxNDk0Mzc0NzYzfQ.eyJjb25maXJtIjozfQ.ustctTWV97hhf_WVkfO38kUzx42ww8wqcIeUHH5biLk' 
+[2017-05-02 17:06:03,807] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:06:03] "POST /account/register HTTP/1.1" 302 - 
+[2017-05-02 17:06:03,906] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:06:03] "GET / HTTP/1.1" 200 - 
+[2017-05-02 17:06:04,483] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:06:04] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-02 17:06:56,224] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/models.py', reloading 
+[2017-05-02 17:06:56,273] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 17:06:57,042] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 17:06:57,054] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 17:07:48,543] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 17:07:48,603] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 17:07:49,110] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 17:07:49,119] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 17:07:54,268] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:07:54] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-02 17:08:04,933] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-02 17:08:05,417] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 58 
+[2017-05-02 17:08:05,418] {register:50} INFO - {'code': 201, 'id': 4, 'status': 'success'} 
+[2017-05-02 17:08:05,421] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:08:05] "POST /account/register HTTP/1.1" 302 - 
+[2017-05-02 17:08:05,444] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:08:05] "GET / HTTP/1.1" 200 - 
+[2017-05-02 17:08:05,927] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:08:05] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-02 17:08:29,612] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 17:08:29,654] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 17:08:30,436] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 17:08:30,447] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 17:12:39,780] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/config.py', reloading 
+[2017-05-02 17:12:39,834] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 17:12:40,604] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 17:12:40,618] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 17:13:27,065] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 17:13:27,107] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 17:13:27,903] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 17:13:27,914] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 17:15:04,825] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 17:15:04,874] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 17:15:05,756] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 17:15:05,795] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-02 17:15:07,697] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:15:07] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-02 17:15:18,140] {_log:87} INFO - 127.0.0.1 - - [02/May/2017 17:15:18] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-02 17:16:12,449] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-02 17:16:12,507] {_log:87} INFO -  * Restarting with stat 
+[2017-05-02 17:16:13,309] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-02 17:16:13,320] {_log:87} INFO -  * Debugger PIN: 133-044-709 
