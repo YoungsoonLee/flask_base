@@ -1,10 +1,11 @@
 from flask import flash, redirect, render_template, request, url_for
 from flask_login import (current_user, login_required, login_user, logout_user)
-# from flask_rq import get_queue
+from flask_rq import get_queue
 
 from . import account
 # from .. import db
-# from ..email import send_email
+from ..email import send_email
+
 from .models import User
 from .forms import (ChangeEmailForm, ChangePasswordForm, CreatePasswordForm,
                     LoginForm, RegistrationForm, RequestResetPasswordForm,
@@ -19,17 +20,31 @@ def login():
     """Log in an existing user."""
     form = LoginForm()
     if form.validate_on_submit():
-        pass
-        """
-        user = User.query.filter_by(email=form.email.data).first()
-        if user is not None and user.password_hash is not None and \
-                user.verify_password(form.password.data):
+        # TODO: requests error handling
+        url = backend_url+'auth'
+        data = {
+                'email': form.email.data,
+                'password': form.password.data
+                }
+        r = requests.post(url, headers=backend_headers, data=data).json()
+        logger.info(r)
+        # TODO: check result
+        if r['status'] == 'fail':
+            flash('Invalid email or password.', 'form-error')
+        else:
+            # make user info
+            user = User(
+                id = r['data']['user_id'], 
+                username = r['data']['username'],
+                token = r['data']['token'],
+                is_active = True,
+                is_authenticated = True
+                )
+
             login_user(user, form.remember_me.data)
+            
             flash('You are now logged in. Welcome back!', 'success')
             return redirect(request.args.get('next') or url_for('main.index'))
-        else:
-            flash('Invalid email or password.', 'form-error')
-        """
     return render_template('account/login.html', form=form)
 
 
@@ -48,46 +63,29 @@ def register():
                 }
         r = requests.post(url, headers=backend_headers, data=data).json()
         logger.info(r)
-        # TODO: check success or not
+
+        # TODO: check result success or not
+
         user = User(
             id = r['id'],
-            username=form.first_name.data+','+form.last_name.data,
-            email=form.email.data)
+            username=form.first_name.data+','+form.last_name.data)
         confirm_token = user.generate_confirmation_token()
         confirm_link = url_for('account.confirm', token=confirm_token, _external=True)
         # TODO: RQ
-        """
         get_queue().enqueue(
             send_email,
-            recipient=user.email,
+            recipient=form.email.data,
             subject='Confirm Your Account',
             template='account/email/confirm',
             user=user,
             confirm_link=confirm_link)
-        """
-        flash('A confirmation link has been sent to {}.'.format(user.email), 'warning')
+        
+        # test mail
+        # send_email('youngtip@gmail.com','Confirm Your Account','account/email/confirm',user=user, confirm_link=confirm_link)
+
+        flash('A confirmation link has been sent to {}.'.format(form.email.data), 'warning')
         return redirect(url_for('main.index'))
 
-        """
-        user = User(
-            first_name=form.first_name.data,
-            last_name=form.last_name.data,
-            email=form.email.data,
-            password=form.password.data)
-        db.session.add(user)
-        db.session.commit()
-        token = user.generate_confirmation_token()
-        confirm_link = url_for('account.confirm', token=token, _external=True)
-        get_queue().enqueue(
-            send_email,
-            recipient=user.email,
-            subject='Confirm Your Account',
-            template='account/email/confirm',
-            user=user,
-            confirm_link=confirm_link)
-        flash('A confirmation link has been sent to {}.'.format(user.email), 'warning')
-        return redirect(url_for('main.index'))
-        """
     return render_template('account/register.html', form=form)
 
 

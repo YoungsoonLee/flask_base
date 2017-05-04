@@ -27,7 +27,7 @@ class Config:
         print('SECRET KEY ENV VAR NOT SET! SHOULD NOT SEE IN PRODUCTION')
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
 
-    MAIL_SERVER = 'smtp.sendgrid.net'
+    MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
@@ -43,20 +43,17 @@ class Config:
     RAYGUN_APIKEY = os.environ.get('RAYGUN_APIKEY')
 
     # Parse the REDIS_URL to set RQ config variables
-    """
     if PYTHON_VERSION == 3:
         urllib.parse.uses_netloc.append('redis')
         url = urllib.parse.urlparse(REDIS_URL)
     else:
         urlparse.uses_netloc.append('redis')
         url = urlparse.urlparse(REDIS_URL)
-
     RQ_DEFAULT_HOST = url.hostname
     RQ_DEFAULT_PORT = url.port
     RQ_DEFAULT_PASSWORD = url.password
     RQ_DEFAULT_DB = 0
-    """
-
+    
     # for backend Frest
     BACKEND_URL = 'http://127.0.0.1:3000/api/v1/'
     BACKEND_HEADERS = {'Accept': 'application/json'}

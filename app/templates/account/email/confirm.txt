@@ -1,4 +1,4 @@
-Dear {{ user.full_name() }},
+Dear {{ user.username }},
 
 Welcome to {{ config.APP_NAME }}!
 

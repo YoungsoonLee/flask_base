@@ -6,7 +6,7 @@ from flask_login import LoginManager
 from flask_assets import Environment
 from flask_wtf import CsrfProtect
 from flask_compress import Compress
-# from flask_rq import RQ
+from flask_rq import RQ
 
 from config import config
 from .assets import app_css, app_js, vendor_css, vendor_js
@@ -15,6 +15,7 @@ from .assets import app_css, app_js, vendor_css, vendor_js
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 mail = Mail()
+
 # db = SQLAlchemy()
 csrf = CsrfProtect()
 compress = Compress()
@@ -51,7 +52,7 @@ def create_app(config_name):
     login_manager.init_app(app)
     csrf.init_app(app)
     compress.init_app(app)
-    # RQ(app)
+    RQ(app)
 
     # Register Jinja template functions
     from .utils import register_template_utils
