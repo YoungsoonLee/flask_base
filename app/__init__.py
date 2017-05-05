@@ -1,10 +1,10 @@
 import os
 from flask import Flask
 from flask_mail import Mail
-# from flask_sqlalchemy import SQLAlchemy
+#from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_assets import Environment
-from flask_wtf import CsrfProtect
+# from flask_wtf import CsrfProtect
 from flask_compress import Compress
 from flask_rq import RQ
 
@@ -17,7 +17,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 mail = Mail()
 
 # db = SQLAlchemy()
-csrf = CsrfProtect()
+# csrf = CsrfProtect()
 compress = Compress()
 
 # Set up Flask-Login
@@ -50,7 +50,7 @@ def create_app(config_name):
     mail.init_app(app)
     # db.init_app(app)
     login_manager.init_app(app)
-    csrf.init_app(app)
+    #csrf.init_app(app)
     compress.init_app(app)
     RQ(app)
 

@@ -38,7 +38,8 @@ def login():
                 username = r['data']['username'],
                 token = r['data']['token'],
                 is_active = True,
-                is_authenticated = True
+                is_authenticated = True,
+                confirmed = r['data']['confirmed']
                 )
 
             login_user(user, form.remember_me.data)
