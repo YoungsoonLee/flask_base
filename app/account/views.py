@@ -26,26 +26,37 @@ def login():
                 'email': form.email.data,
                 'password': form.password.data
                 }
-        r = requests.post(url, headers=backend_headers, data=data).json()
-        logger.info(r)
-        # TODO: check result
-        if r['status'] == 'fail':
-            flash('Invalid email or password.', 'form-error')
-        else:
-            # make user info
-            user = User(
-                id = r['data']['user_id'], 
-                username = r['data']['username'],
-                token = r['data']['token'],
-                is_active = True,
-                is_authenticated = True,
-                confirmed = r['data']['confirmed']
-                )
 
-            login_user(user, form.remember_me.data)
-            
-            flash('You are now logged in. Welcome back!', 'success')
-            return redirect(request.args.get('next') or url_for('main.index'))
+        try:
+            r = requests.post(url, headers=backend_headers, data=data).json()
+            # logger.info(r)
+            if r is not None:
+                if r['status'] == 'fail':
+                    flash('Invalid email or password.', 'form-error')
+                else:
+                    # make user info
+                    user = User(
+                        id = r['data']['user_id'], 
+                        username = r['data']['username'],
+                        token = r['data']['token'],
+                        is_active = True,
+                        is_authenticated = True,
+                        confirmed = r['data']['confirmed']
+                    )
+                    # test exception 
+                    # raise requests.exceptions.RequestException
+
+                    login_user(user, form.remember_me.data)
+                    flash('You are now logged in. Welcome back!', 'success')
+                    return redirect(request.args.get('next') or url_for('main.index'))
+            else:
+                flash('oops, something went wrong.', 'form-error')
+                flash('{server return is null}', 'form-error')
+
+        except requests.exceptions.RequestException as e:
+            logger.error(e)
+            flash('oops, something went wrong.'+'{'+str(e)[str(e).find('['):]+'}', 'form-error')
+
     return render_template('account/login.html', form=form)
 
 
@@ -55,37 +66,41 @@ def register():
     form = RegistrationForm()
     if form.validate_on_submit():
         # add youngtip using Frest backend
-        # TODO: requests error handling
-        url = backend_url+'users'
-        data = {
-                'email': form.email.data,
-                'username': form.first_name.data+','+form.last_name.data,
-                'password': form.password.data
-                }
-        r = requests.post(url, headers=backend_headers, data=data).json()
-        logger.info(r)
+        try:
+            # url = backend_url+'users'
+            url = backend_url+'users/signup'
+            data = {
+                    'email': form.email.data,
+                    'username': form.first_name.data+','+form.last_name.data,
+                    'password': form.password.data
+                    }
+            # r = requests.post(url, headers=backend_headers, data=data).json()
+            r = requests.post(url, headers=backend_headers, data=data)
+            logger.info(r)
 
-        # TODO: check result success or not
+            # TODO: check result success or not
+            user = User(
+                id = r['id'],
+                username=form.first_name.data+','+form.last_name.data)
+            confirm_token = user.generate_confirmation_token()
+            confirm_link = url_for('account.confirm', token=confirm_token, _external=True)
+            # TODO: RQ
+            get_queue().enqueue(
+                send_email,
+                recipient=form.email.data,
+                subject='Confirm Your Account',
+                template='account/email/confirm',
+                user=user,
+                confirm_link=confirm_link)
+            
+            # test mail
+            # send_email('youngtip@gmail.com','Confirm Your Account','account/email/confirm',user=user, confirm_link=confirm_link)
+            flash('A confirmation link has been sent to {}.'.format(form.email.data), 'warning')
+            return redirect(url_for('main.index'))
 
-        user = User(
-            id = r['id'],
-            username=form.first_name.data+','+form.last_name.data)
-        confirm_token = user.generate_confirmation_token()
-        confirm_link = url_for('account.confirm', token=confirm_token, _external=True)
-        # TODO: RQ
-        get_queue().enqueue(
-            send_email,
-            recipient=form.email.data,
-            subject='Confirm Your Account',
-            template='account/email/confirm',
-            user=user,
-            confirm_link=confirm_link)
-        
-        # test mail
-        # send_email('youngtip@gmail.com','Confirm Your Account','account/email/confirm',user=user, confirm_link=confirm_link)
-
-        flash('A confirmation link has been sent to {}.'.format(form.email.data), 'warning')
-        return redirect(url_for('main.index'))
+        except requests.exceptions.RequestException as e:
+            logger.error(e)
+            flash('oops, something went wrong.'+'{'+str(e)[str(e).find('['):]+'}', 'form-error')
 
     return render_template('account/register.html', form=form)
 

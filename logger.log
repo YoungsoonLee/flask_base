@@ -1,0 +1,669 @@
+[2017-05-05 16:29:15,931] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-05 16:29:15,933] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:29:16,437] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:29:16,460] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:29:22,334] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:29:22,576] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 500 None 
+[2017-05-05 16:29:22,600] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:29:22] "GET /account/logout HTTP/1.1" 500 - 
+[2017-05-05 16:29:22,830] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:29:22] "GET /account/logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-05 16:29:22,832] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:29:22] "GET /account/logout?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-05 16:29:22,834] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:29:22] "GET /account/logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-05 16:29:23,006] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:29:23] "GET /account/logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 16:29:23,331] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:29:23] "GET /account/logout?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-05 16:29:23,749] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:29:23] "GET /account/logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 16:29:36,085] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:29:38,886] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-05 16:29:38,886] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-05 16:29:39,020] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:29:39] "GET / HTTP/1.1" 200 - 
+[2017-05-05 16:30:12,619] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:30:14,112] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-05 16:30:14,113] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-05 16:30:14,115] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:30:14] "GET /account/logout HTTP/1.1" 302 - 
+[2017-05-05 16:30:14,117] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:30:15,545] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-05 16:30:15,546] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-05 16:30:15,548] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:30:15] "GET /account/logout HTTP/1.1" 302 - 
+[2017-05-05 16:30:15,562] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:30:15] "GET / HTTP/1.1" 200 - 
+[2017-05-05 16:30:19,810] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:30:19] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-05 16:30:27,012] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:30:29,163] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-05 16:30:29,164] {login:32} INFO - {'code': 200, 'data': {'confirmed': True, 'created_at': '2017-05-05T16:30:28.754324', 'expired_at': '2017-11-01T16:30:28.754324', 'scheme': 'bearer', 'token': 'c5e12a5e9211b614de231d5f7d45d5b98bae80877878939e3c6f94c4ae9d11a8d60548ae79739158c6d8029d3015a492', 'user_id': 26, 'username': 'youngsoon,lee'}, 'status': 'success'} 
+[2017-05-05 16:30:29,166] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:30:29] "POST /account/login HTTP/1.1" 302 - 
+[2017-05-05 16:30:29,174] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:30:30,598] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-05 16:30:30,599] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-05 16:30:30,609] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:30:30] "GET / HTTP/1.1" 200 - 
+[2017-05-05 16:30:31,240] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:30:32,645] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-05 16:30:32,646] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-05 16:30:32,656] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:30:32] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-05 16:30:54,407] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:30:54,468] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:30:55,242] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:30:55,257] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:30:56,271] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:30:56,328] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:30:56,835] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:30:56,846] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:31:15,025] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:31:15,076] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:31:15,601] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:31:15,613] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:31:42,139] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:31:43,609] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-05 16:31:43,610] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-05 16:31:43,612] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:31:43] "GET /account/logout HTTP/1.1" 302 - 
+[2017-05-05 16:31:43,681] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:31:43] "GET / HTTP/1.1" 200 - 
+[2017-05-05 16:31:45,776] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:31:45] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-05 16:32:01,065] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:32:01,112] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:32:01,875] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:32:01,887] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:32:10,460] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:32:12,592] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-05 16:32:12,605] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:32:12] "POST /account/login HTTP/1.1" 500 - 
+[2017-05-05 16:32:12,716] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:32:12] "GET /account/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-05 16:32:12,727] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:32:12] "GET /account/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-05 16:32:12,732] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:32:12] "GET /account/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-05 16:32:12,814] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:32:12] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 16:32:12,900] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:32:12] "GET /account/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-05 16:32:13,108] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:32:13] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 16:32:13,239] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:32:13] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 16:32:26,121] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:32:26,175] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:32:27,011] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:32:27,028] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:32:35,340] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:32:37,473] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-05 16:32:37,476] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:32:37] "POST /account/login HTTP/1.1" 302 - 
+[2017-05-05 16:32:37,483] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:32:38,910] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-05 16:32:38,912] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-05 16:32:39,028] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:32:39] "GET / HTTP/1.1" 200 - 
+[2017-05-05 16:32:39,632] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:32:40,954] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-05 16:32:40,955] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-05 16:32:40,965] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:32:40] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-05 16:33:28,625] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:33:28,677] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:33:29,632] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:33:29,650] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:33:32,110] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:33:33,490] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-05 16:33:33,491] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-05 16:33:33,493] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:33:33] "GET /account/logout HTTP/1.1" 302 - 
+[2017-05-05 16:33:33,563] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:33:33] "GET / HTTP/1.1" 200 - 
+[2017-05-05 16:33:35,850] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:33:35] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-05 16:33:42,765] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:33:44,602] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-05 16:33:44,611] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:33:44] "POST /account/login HTTP/1.1" 500 - 
+[2017-05-05 16:33:44,730] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:33:44] "GET /account/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-05 16:33:44,733] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:33:44] "GET /account/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-05 16:33:44,735] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:33:44] "GET /account/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-05 16:33:44,781] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:33:44] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 16:33:44,835] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:33:44] "GET /account/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-05 16:33:44,904] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:33:44] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 16:33:45,160] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:33:45] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 16:35:08,604] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:35:08,664] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:35:09,489] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:35:09,506] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:35:42,830] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:35:42,880] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:35:43,671] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:35:43,685] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:35:49,749] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:35:49,800] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:35:50,315] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:35:50,326] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:35:52,310] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:35:54,391] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-05 16:35:54,401] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:35:54] "POST /account/login HTTP/1.1" 500 - 
+[2017-05-05 16:35:54,514] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:35:54] "GET /account/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-05 16:35:54,517] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:35:54] "GET /account/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-05 16:35:54,521] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:35:54] "GET /account/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-05 16:35:54,576] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:35:54] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 16:35:54,643] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:35:54] "GET /account/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-05 16:35:54,961] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:35:54] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 16:36:10,520] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:36:10,569] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:36:11,341] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:36:11,358] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:36:22,725] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:36:24,906] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-05 16:36:25,020] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:36:25] "POST /account/login HTTP/1.1" 200 - 
+[2017-05-05 16:37:40,243] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:37:40,290] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:37:41,116] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:37:41,131] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:37:48,741] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:37:50,921] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-05 16:37:51,024] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:37:51] "POST /account/login HTTP/1.1" 200 - 
+[2017-05-05 16:37:51,103] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:37:51] "GET /static/styles/app.css?873aca08 HTTP/1.1" 304 - 
+[2017-05-05 16:37:51,106] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:37:51] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 304 - 
+[2017-05-05 16:37:51,108] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:37:51] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 304 - 
+[2017-05-05 16:37:51,111] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:37:51] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 304 - 
+[2017-05-05 16:37:51,115] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:37:51] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 304 - 
+[2017-05-05 16:37:51,117] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:37:51] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 304 - 
+[2017-05-05 16:37:51,119] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:37:51] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 304 - 
+[2017-05-05 16:37:51,608] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:37:51] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 304 - 
+[2017-05-05 16:38:09,413] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:38:09,467] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:38:10,246] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:38:10,261] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:38:25,419] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:38:25,469] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:38:25,972] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:38:25,983] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:39:50,798] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 16:39:50,848] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:53:14,265] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-05 16:53:14,267] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:53:14,776] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:53:14,792] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:53:55,079] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:53:55] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-05 16:56:09,115] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-05 16:56:09,116] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 16:56:09,620] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 16:56:09,639] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 16:56:20,158] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:56:20] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-05 16:56:31,236] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:56:33,438] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-05 16:56:33,441] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:56:33] "POST /account/login HTTP/1.1" 302 - 
+[2017-05-05 16:56:33,447] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:56:34,768] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-05 16:56:34,769] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-05 16:56:34,784] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:56:34] "GET / HTTP/1.1" 200 - 
+[2017-05-05 16:56:35,403] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:56:36,815] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-05 16:56:36,816] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-05 16:56:36,825] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:56:36] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-05 16:56:48,256] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 16:56:49,719] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-05 16:56:49,720] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-05 16:56:49,722] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:56:49] "GET /account/logout HTTP/1.1" 302 - 
+[2017-05-05 16:56:49,736] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 16:56:49] "GET / HTTP/1.1" 200 - 
+[2017-05-05 17:09:07,288] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-05 17:09:07,289] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:09:07,884] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 17:09:07,901] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 17:09:13,136] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:09:13] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-05 17:09:19,760] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 17:09:19,769] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:09:19] "POST /account/login HTTP/1.1" 200 - 
+[2017-05-05 17:10:52,951] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 17:10:52,998] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:10:53,590] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 17:10:53,605] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 17:10:58,709] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 17:10:58,710] {login:58} INFO - HTTPConnectionPool(host='127.0.0.1', port=3000): Max retries exceeded with url: /api/v1/auth (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x10402e080>: Failed to establish a new connection: [Errno 61] Connection refused',)) 
+[2017-05-05 17:10:58,813] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:10:58] "POST /account/login HTTP/1.1" 200 - 
+[2017-05-05 17:12:22,480] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 17:12:22,536] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:12:58,269] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-05 17:12:58,270] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:12:58,737] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 17:12:58,752] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 17:13:05,769] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 17:13:05,791] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:05] "POST /account/login HTTP/1.1" 500 - 
+[2017-05-05 17:13:05,883] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:05] "GET /account/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-05 17:13:05,885] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:05] "GET /account/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-05 17:13:05,887] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:05] "GET /account/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-05 17:13:05,978] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:05] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 17:13:06,059] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:06] "GET /account/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-05 17:13:06,263] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:06] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 17:13:06,512] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:06] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 17:13:49,254] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 17:13:49,313] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:13:49,904] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 17:13:49,920] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 17:13:58,418] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 17:13:58,430] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:58] "POST /account/login HTTP/1.1" 500 - 
+[2017-05-05 17:13:58,517] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:58] "GET /account/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-05 17:13:58,519] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:58] "GET /account/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-05 17:13:58,521] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:58] "GET /account/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-05 17:13:58,576] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:58] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 17:13:58,649] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:58] "GET /account/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-05 17:13:58,968] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:13:58] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 17:15:24,828] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 17:15:24,923] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:15:25,787] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 17:15:25,801] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 17:15:34,420] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 17:15:34,442] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:15:34] "POST /account/login HTTP/1.1" 500 - 
+[2017-05-05 17:15:34,537] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:15:34] "GET /account/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-05 17:15:34,539] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:15:34] "GET /account/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-05 17:15:34,541] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:15:34] "GET /account/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-05 17:15:34,601] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:15:34] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 17:15:34,668] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:15:34] "GET /account/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-05 17:15:34,960] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:15:34] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 17:15:57,104] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 17:15:57,151] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:16:07,143] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-05 17:16:07,145] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:16:07,687] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 17:16:07,702] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 17:16:12,275] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 17:16:12,276] {login:58} INFO - 239 
+[2017-05-05 17:16:12,379] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:16:12] "POST /account/login HTTP/1.1" 200 - 
+[2017-05-05 17:16:45,078] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 17:16:45,131] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:16:45,710] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 17:16:45,727] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 17:16:51,487] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 17:16:51,488] {login:58} INFO - 239 
+[2017-05-05 17:16:51,499] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:16:51] "POST /account/login HTTP/1.1" 500 - 
+[2017-05-05 17:16:51,574] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:16:51] "GET /account/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-05 17:16:51,575] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:16:51] "GET /account/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-05 17:16:51,577] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:16:51] "GET /account/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-05 17:16:51,627] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:16:51] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 17:16:51,694] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:16:51] "GET /account/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-05 17:16:51,870] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:16:51] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 17:16:52,009] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:16:52] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 17:17:10,979] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 17:17:11,046] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:17:11,596] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 17:17:11,610] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 17:17:17,374] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 17:17:17,375] {login:58} INFO - 239 
+[2017-05-05 17:17:17,480] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:17:17] "POST /account/login HTTP/1.1" 200 - 
+[2017-05-05 17:17:47,979] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 17:17:48,025] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:17:48,571] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 17:17:48,585] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 17:18:01,716] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 17:18:01,768] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:18:02,319] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 17:18:02,333] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 17:18:13,103] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 17:18:13,115] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:18:13] "POST /account/login HTTP/1.1" 500 - 
+[2017-05-05 17:18:13,189] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:18:13] "GET /account/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-05 17:18:13,190] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:18:13] "GET /account/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-05 17:18:13,192] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:18:13] "GET /account/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-05 17:18:13,238] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:18:13] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 17:18:13,302] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:18:13] "GET /account/login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-05 17:18:13,378] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:18:13] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 17:18:13,643] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:18:13] "GET /account/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-05 17:18:24,539] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 17:18:24,599] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:18:38,860] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-05 17:18:38,861] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:18:39,365] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 17:18:39,381] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 17:18:43,795] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 17:18:43,898] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:18:43] "POST /account/login HTTP/1.1" 200 - 
+[2017-05-05 17:19:20,784] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 17:19:20,839] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:19:21,367] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 17:19:21,379] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 17:19:29,314] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-05 17:19:29,315] {login:57} ERROR - HTTPConnectionPool(host='127.0.0.1', port=3000): Max retries exceeded with url: /api/v1/auth (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x10402e080>: Failed to establish a new connection: [Errno 61] Connection refused',)) 
+[2017-05-05 17:19:29,412] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 17:19:29] "POST /account/login HTTP/1.1" 200 - 
+[2017-05-05 17:19:49,664] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-05 17:19:49,710] {_log:87} INFO -  * Restarting with stat 
+[2017-05-05 17:19:50,331] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-05 17:19:50,345] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-05 23:48:11,521] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 23:48:11] "GET / HTTP/1.1" 200 - 
+[2017-05-05 23:48:11,927] {_log:87} INFO - 127.0.0.1 - - [05/May/2017 23:48:11] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-06 13:21:55,417] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:21:55] "GET / HTTP/1.1" 200 - 
+[2017-05-06 13:21:55,854] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:21:55] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 304 - 
+[2017-05-06 13:21:55,860] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:21:55] "GET /static/styles/app.css?873aca08 HTTP/1.1" 304 - 
+[2017-05-06 13:21:55,863] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:21:55] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 304 - 
+[2017-05-06 13:21:55,868] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:21:55] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 304 - 
+[2017-05-06 13:21:55,871] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:21:55] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 304 - 
+[2017-05-06 13:21:55,874] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:21:55] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 304 - 
+[2017-05-06 13:21:55,879] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:21:55] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 304 - 
+[2017-05-06 13:21:56,187] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:21:56] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 304 - 
+[2017-05-06 13:21:58,585] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:21:58] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-06 13:21:59,862] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:21:59] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-06 13:22:09,438] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:22:09,440] {login:57} ERROR - HTTPConnectionPool(host='127.0.0.1', port=3000): Max retries exceeded with url: /api/v1/auth (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x10401b400>: Failed to establish a new connection: [Errno 61] Connection refused',)) 
+[2017-05-06 13:22:09,449] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:22:09] "POST /account/login HTTP/1.1" 200 - 
+[2017-05-06 13:22:26,225] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:22:29,541] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-06 13:22:29,545] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:22:29] "POST /account/login HTTP/1.1" 302 - 
+[2017-05-06 13:22:29,569] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:22:30,967] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 13:22:30,968] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 13:22:30,987] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:22:30] "GET / HTTP/1.1" 200 - 
+[2017-05-06 13:22:31,772] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:22:33,482] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 13:22:33,483] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 13:22:33,492] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:22:33] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-06 13:22:43,494] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:22:44,737] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 13:22:44,738] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 13:22:44,740] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:22:44] "GET /account/logout HTTP/1.1" 302 - 
+[2017-05-06 13:22:44,756] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:22:44] "GET / HTTP/1.1" 200 - 
+[2017-05-06 13:22:46,831] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:22:46] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-06 13:22:52,832] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:22:55,107] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-06 13:22:55,110] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:22:55] "POST /account/login HTTP/1.1" 302 - 
+[2017-05-06 13:22:55,117] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:22:56,495] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 13:22:56,496] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 13:22:56,507] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:22:56] "GET / HTTP/1.1" 200 - 
+[2017-05-06 13:22:57,042] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:22:58,849] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 13:22:58,850] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 13:22:58,857] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:22:58] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-06 13:23:06,503] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:23:07,753] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 13:23:07,754] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 13:23:07,756] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:23:07] "GET /account/logout HTTP/1.1" 302 - 
+[2017-05-06 13:23:07,773] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:23:07] "GET / HTTP/1.1" 200 - 
+[2017-05-06 13:23:11,433] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:23:11] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-06 13:23:23,926] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:23:27,024] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-06 13:23:27,026] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:23:27] "POST /account/login HTTP/1.1" 302 - 
+[2017-05-06 13:23:27,034] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:23:28,962] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 13:23:28,963] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 13:23:28,975] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:23:28] "GET / HTTP/1.1" 200 - 
+[2017-05-06 13:23:57,121] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:23:58,403] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 13:23:58,404] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 13:23:58,406] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:23:58] "GET /account/logout HTTP/1.1" 302 - 
+[2017-05-06 13:23:58,424] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:23:58] "GET / HTTP/1.1" 200 - 
+[2017-05-06 13:24:00,514] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:24:00] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-06 13:24:38,307] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:24:40,816] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-06 13:24:40,819] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:24:40] "POST /account/login HTTP/1.1" 302 - 
+[2017-05-06 13:24:40,827] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:24:42,325] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 13:24:42,326] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 13:24:42,337] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:24:42] "GET / HTTP/1.1" 200 - 
+[2017-05-06 13:24:43,587] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 13:24:45,442] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 13:24:45,443] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 13:24:45,451] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 13:24:45] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-06 21:22:14,696] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-06 21:22:14,699] {_log:87} INFO -  * Restarting with stat 
+[2017-05-06 21:22:15,200] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-06 21:22:15,213] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-06 21:22:30,405] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:22:30] "GET / HTTP/1.1" 200 - 
+[2017-05-06 21:22:30,497] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:22:30] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 200 - 
+[2017-05-06 21:22:30,502] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:22:30] "GET /static/styles/app.css?873aca08 HTTP/1.1" 200 - 
+[2017-05-06 21:22:30,517] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:22:30] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 200 - 
+[2017-05-06 21:22:30,535] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:22:30] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 200 - 
+[2017-05-06 21:22:30,538] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:22:30] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 200 - 
+[2017-05-06 21:22:30,621] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:22:30] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 200 - 
+[2017-05-06 21:22:30,625] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:22:30] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 200 - 
+[2017-05-06 21:22:30,940] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:22:30] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 200 - 
+[2017-05-06 21:22:30,955] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:22:30] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-06 21:22:34,727] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:22:34] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-06 21:22:41,608] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:22:43,581] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-06 21:22:43,583] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:22:43] "POST /account/login HTTP/1.1" 302 - 
+[2017-05-06 21:22:43,592] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:22:45,329] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:22:45,330] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:22:45,339] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:22:45] "GET / HTTP/1.1" 200 - 
+[2017-05-06 21:23:18,826] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-06 21:23:18,881] {_log:87} INFO -  * Restarting with stat 
+[2017-05-06 21:23:19,685] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-06 21:23:19,702] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-06 21:23:22,721] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:23:24,518] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:23:24,520] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:23:24,522] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:23:24] "GET /account/logout HTTP/1.1" 302 - 
+[2017-05-06 21:23:24,593] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:23:24] "GET / HTTP/1.1" 200 - 
+[2017-05-06 21:23:26,306] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:23:26] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-06 21:23:49,622] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:23:51,330] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/users HTTP/1.1" 201 59 
+[2017-05-06 21:23:51,331] {register:77} INFO - {'code': 201, 'id': 27, 'status': 'success'} 
+[2017-05-06 21:23:51,336] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:23:51] "POST /account/register HTTP/1.1" 302 - 
+[2017-05-06 21:23:51,353] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:23:51] "GET / HTTP/1.1" 200 - 
+[2017-05-06 21:29:21,518] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:29:21] "GET /account/confirm-account/eyJhbGciOiJIUzI1NiIsImlhdCI6MTQ5NDEzMTAzMSwiZXhwIjoxNDk0NzM1ODMxfQ.eyJjb25maXJtIjoyN30.7_NPnVpK-aFA6acA19kDYkl3KO0Qu9zSsHppQoj2ZlU HTTP/1.1" 302 - 
+[2017-05-06 21:29:21,550] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:29:21] "GET /account/login?next=%2Faccount%2Fconfirm-account%2FeyJhbGciOiJIUzI1NiIsImlhdCI6MTQ5NDEzMTAzMSwiZXhwIjoxNDk0NzM1ODMxfQ.eyJjb25maXJtIjoyN30.7_NPnVpK-aFA6acA19kDYkl3KO0Qu9zSsHppQoj2ZlU HTTP/1.1" 200 - 
+[2017-05-06 21:29:30,938] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:29:33,379] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 399 
+[2017-05-06 21:29:33,381] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:29:33] "POST /account/login?next=%2Faccount%2Fconfirm-account%2FeyJhbGciOiJIUzI1NiIsImlhdCI6MTQ5NDEzMTAzMSwiZXhwIjoxNDk0NzM1ODMxfQ.eyJjb25maXJtIjoyN30.7_NPnVpK-aFA6acA19kDYkl3KO0Qu9zSsHppQoj2ZlU HTTP/1.1" 302 - 
+[2017-05-06 21:29:33,390] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:29:35,025] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/27 HTTP/1.1" 200 248 
+[2017-05-06 21:29:35,025] {_user_loader:76} INFO - {'code': 200, 'confirmed': False, 'created_at': '2017-05-06T21:23:49.691183', 'email': 'youngtipca@gmail.com', 'id': 27, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'ruhee ,lee'} 
+[2017-05-06 21:29:35,026] {confirm_account:50} INFO - youngtip >> 4http://127.0.0.1:3000/api/v1/confirm 
+[2017-05-06 21:29:35,028] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:29:36,083] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/confirm HTTP/1.1" 200 45 
+[2017-05-06 21:29:36,084] {confirm_account:56} INFO - youngtip >> http://127.0.0.1:3000/api/v1/confirm 
+[2017-05-06 21:29:36,086] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:29:36] "GET /account/confirm-account/eyJhbGciOiJIUzI1NiIsImlhdCI6MTQ5NDEzMTAzMSwiZXhwIjoxNDk0NzM1ODMxfQ.eyJjb25maXJtIjoyN30.7_NPnVpK-aFA6acA19kDYkl3KO0Qu9zSsHppQoj2ZlU HTTP/1.1" 302 - 
+[2017-05-06 21:29:36,095] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:29:37,721] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/27 HTTP/1.1" 200 247 
+[2017-05-06 21:29:37,722] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-06T21:23:49.691183', 'email': 'youngtipca@gmail.com', 'id': 27, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'ruhee ,lee'} 
+[2017-05-06 21:29:37,731] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:29:37] "GET / HTTP/1.1" 200 - 
+[2017-05-06 21:29:53,512] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:29:55,823] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/27 HTTP/1.1" 200 247 
+[2017-05-06 21:29:55,823] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-06T21:23:49.691183', 'email': 'youngtipca@gmail.com', 'id': 27, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'ruhee ,lee'} 
+[2017-05-06 21:29:55,834] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:29:55] "GET / HTTP/1.1" 200 - 
+[2017-05-06 21:29:56,348] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:29:58,095] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/27 HTTP/1.1" 200 247 
+[2017-05-06 21:29:58,096] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-06T21:23:49.691183', 'email': 'youngtipca@gmail.com', 'id': 27, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'ruhee ,lee'} 
+[2017-05-06 21:29:58,097] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:29:58] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 304 - 
+[2017-05-06 21:29:58,101] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:29:59,877] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/27 HTTP/1.1" 200 247 
+[2017-05-06 21:29:59,878] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-06T21:23:49.691183', 'email': 'youngtipca@gmail.com', 'id': 27, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'ruhee ,lee'} 
+[2017-05-06 21:29:59,879] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:29:59] "GET /static/styles/app.css?873aca08 HTTP/1.1" 304 - 
+[2017-05-06 21:29:59,883] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:30:01,242] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/27 HTTP/1.1" 200 247 
+[2017-05-06 21:30:01,243] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-06T21:23:49.691183', 'email': 'youngtipca@gmail.com', 'id': 27, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'ruhee ,lee'} 
+[2017-05-06 21:30:01,243] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:30:01] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 304 - 
+[2017-05-06 21:30:01,249] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:30:02,845] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/27 HTTP/1.1" 200 247 
+[2017-05-06 21:30:02,846] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-06T21:23:49.691183', 'email': 'youngtipca@gmail.com', 'id': 27, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'ruhee ,lee'} 
+[2017-05-06 21:30:02,847] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:30:02] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 304 - 
+[2017-05-06 21:30:02,851] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:30:04,515] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/27 HTTP/1.1" 200 247 
+[2017-05-06 21:30:04,516] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-06T21:23:49.691183', 'email': 'youngtipca@gmail.com', 'id': 27, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'ruhee ,lee'} 
+[2017-05-06 21:30:04,517] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:30:04] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 304 - 
+[2017-05-06 21:30:04,521] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:30:06,248] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/27 HTTP/1.1" 200 247 
+[2017-05-06 21:30:06,249] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-06T21:23:49.691183', 'email': 'youngtipca@gmail.com', 'id': 27, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'ruhee ,lee'} 
+[2017-05-06 21:30:06,250] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:30:06] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 304 - 
+[2017-05-06 21:30:06,254] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:30:08,019] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/27 HTTP/1.1" 200 247 
+[2017-05-06 21:30:08,020] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-06T21:23:49.691183', 'email': 'youngtipca@gmail.com', 'id': 27, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'ruhee ,lee'} 
+[2017-05-06 21:30:08,021] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:30:08] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 304 - 
+[2017-05-06 21:30:08,284] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:30:09,690] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/27 HTTP/1.1" 200 247 
+[2017-05-06 21:30:09,691] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-06T21:23:49.691183', 'email': 'youngtipca@gmail.com', 'id': 27, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'ruhee ,lee'} 
+[2017-05-06 21:30:09,692] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:30:09] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 304 - 
+[2017-05-06 21:31:11,097] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:31:12,801] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/27 HTTP/1.1" 200 247 
+[2017-05-06 21:31:12,802] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-06T21:23:49.691183', 'email': 'youngtipca@gmail.com', 'id': 27, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'ruhee ,lee'} 
+[2017-05-06 21:31:12,804] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:31:12] "GET /account/logout HTTP/1.1" 302 - 
+[2017-05-06 21:31:12,839] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:31:12] "GET / HTTP/1.1" 200 - 
+[2017-05-06 21:31:16,751] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:31:16] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-06 21:31:25,615] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:31:27,520] {_make_request:395} DEBUG - http://127.0.0.1:3000 "POST /api/v1/auth HTTP/1.1" 200 401 
+[2017-05-06 21:31:27,523] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:31:27] "POST /account/login HTTP/1.1" 302 - 
+[2017-05-06 21:31:27,532] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:31:28,940] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:31:28,941] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:31:28,952] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:31:28] "GET / HTTP/1.1" 200 - 
+[2017-05-06 21:31:44,768] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:31:46,542] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:31:46,543] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:31:46,555] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:31:46] "GET / HTTP/1.1" 200 - 
+[2017-05-06 21:31:46,926] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:31:48,602] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:31:48,603] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:31:48,604] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:31:48] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 304 - 
+[2017-05-06 21:31:48,609] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:31:50,253] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:31:50,254] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:31:50,255] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:31:50] "GET /static/styles/app.css?873aca08 HTTP/1.1" 304 - 
+[2017-05-06 21:31:50,259] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:31:51,906] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:31:51,907] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:31:51,908] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:31:51] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 304 - 
+[2017-05-06 21:31:51,912] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:31:53,640] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:31:53,641] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:31:53,642] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:31:53] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 304 - 
+[2017-05-06 21:31:53,646] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:31:55,304] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:31:55,305] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:31:55,306] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:31:55] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 304 - 
+[2017-05-06 21:31:55,311] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:31:57,033] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:31:57,034] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:31:57,036] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:31:57] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 304 - 
+[2017-05-06 21:31:57,042] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:31:58,712] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:31:58,713] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:31:58,714] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:31:58] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 304 - 
+[2017-05-06 21:31:58,826] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:32:00,572] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:32:00,573] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:32:00,574] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:32:00] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 304 - 
+[2017-05-06 21:32:03,140] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:32:04,754] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:32:04,755] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:32:04,764] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:32:04] "GET / HTTP/1.1" 200 - 
+[2017-05-06 21:32:05,133] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:32:06,906] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:32:06,908] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:32:06,909] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:32:06] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 304 - 
+[2017-05-06 21:32:06,914] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:32:08,562] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:32:08,563] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:32:08,565] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:32:08] "GET /static/styles/app.css?873aca08 HTTP/1.1" 304 - 
+[2017-05-06 21:32:08,575] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:32:10,144] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:32:10,145] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:32:10,145] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:32:10] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 304 - 
+[2017-05-06 21:32:10,150] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:32:11,774] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:32:11,775] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:32:11,775] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:32:11] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 304 - 
+[2017-05-06 21:32:11,779] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:32:13,474] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:32:13,475] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:32:13,476] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:32:13] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 304 - 
+[2017-05-06 21:32:13,481] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:32:15,319] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:32:15,320] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:32:15,320] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:32:15] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 304 - 
+[2017-05-06 21:32:15,325] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:32:17,159] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:32:17,160] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:32:17,161] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:32:17] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 304 - 
+[2017-05-06 21:32:17,317] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:32:18,949] {_make_request:395} DEBUG - http://127.0.0.1:3000 "GET /api/v1/users/26 HTTP/1.1" 200 248 
+[2017-05-06 21:32:18,950] {_user_loader:76} INFO - {'code': 200, 'confirmed': True, 'created_at': '2017-05-05T11:04:23.870978', 'email': 'youngtip@gmail.com', 'id': 26, 'permission': 'USER', 'status': 'success', 'updated_at': None, 'username': 'youngsoon,lee'} 
+[2017-05-06 21:32:18,951] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:32:18] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 304 - 
+[2017-05-06 21:38:06,970] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/config.py', reloading 
+[2017-05-06 21:38:07,074] {_log:87} INFO -  * Restarting with stat 
+[2017-05-06 21:38:07,875] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-06 21:38:07,891] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-06 21:38:33,129] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-06 21:38:33,185] {_log:87} INFO -  * Restarting with stat 
+[2017-05-06 21:38:33,831] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-06 21:38:33,842] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-06 21:38:39,655] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:38:39,662] {_make_request:395} DEBUG - http://127.0.0.1:4000 "GET /users/26 HTTP/1.1" 404 40 
+[2017-05-06 21:38:39,679] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:38:39] "GET /account/logout HTTP/1.1" 500 - 
+[2017-05-06 21:38:40,121] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:38:40] "GET /account/logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-06 21:38:40,124] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:38:40] "GET /account/logout?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-06 21:38:40,127] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:38:40] "GET /account/logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-06 21:38:40,281] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:38:40] "GET /account/logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 21:38:40,524] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:38:40] "GET /account/logout?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-06 21:38:41,057] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:38:41] "GET /account/logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 21:38:52,344] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:38:52] "GET / HTTP/1.1" 200 - 
+[2017-05-06 21:38:52,611] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:38:52] "GET /static/styles/app.css?873aca08 HTTP/1.1" 200 - 
+[2017-05-06 21:38:52,700] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:38:52] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 200 - 
+[2017-05-06 21:38:54,550] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:38:54] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 - 
+[2017-05-06 21:38:54,559] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:38:54] "GET /apple-touch-icon.png HTTP/1.1" 404 - 
+[2017-05-06 21:38:56,012] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:38:56] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-06 21:39:10,522] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:39:10,523] {_make_request:395} DEBUG - http://127.0.0.1:4000 "POST /users/signup HTTP/1.1" 404 44 
+[2017-05-06 21:39:10,532] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:39:10] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-06 21:39:10,611] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:39:10] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-06 21:39:10,614] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:39:10] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-06 21:39:10,616] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:39:10] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-06 21:39:10,702] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:39:10] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 21:39:10,800] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:39:10] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-06 21:39:11,010] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:39:11] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 21:39:11,234] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:39:11] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 21:39:48,483] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-06 21:39:48,541] {_log:87} INFO -  * Restarting with stat 
+[2017-05-06 21:39:49,339] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-06 21:39:49,354] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-06 21:40:24,658] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-06 21:40:24,709] {_log:87} INFO -  * Restarting with stat 
+[2017-05-06 21:40:25,315] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-06 21:40:25,326] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-06 21:40:35,961] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:40:35,963] {_make_request:395} DEBUG - http://127.0.0.1:4000 "POST /users/signup HTTP/1.1" 404 44 
+[2017-05-06 21:40:35,964] {register:79} INFO - <Response [404]> 
+[2017-05-06 21:40:35,971] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:40:35] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-06 21:40:36,051] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:40:36] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-06 21:40:36,053] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:40:36] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-06 21:40:36,054] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:40:36] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-06 21:40:36,134] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:40:36] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 21:40:36,212] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:40:36] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-06 21:40:36,613] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:40:36] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 21:42:04,214] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/config.py', reloading 
+[2017-05-06 21:42:04,275] {_log:87} INFO -  * Restarting with stat 
+[2017-05-06 21:42:04,816] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-06 21:42:04,828] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-06 21:42:22,336] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-06 21:42:22,337] {_log:87} INFO -  * Restarting with stat 
+[2017-05-06 21:42:22,853] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-06 21:42:22,868] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-06 21:42:29,631] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:42:29] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-06 21:42:30,223] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:42:30] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-06 21:42:35,782] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:42:36,710] {_make_request:395} DEBUG - http://127.0.0.1:4000 "POST /api/v1/users/signup HTTP/1.1" 500 1736 
+[2017-05-06 21:42:36,711] {register:79} INFO - <Response [500]> 
+[2017-05-06 21:42:36,721] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:42:36] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-06 21:42:36,799] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:42:36] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-06 21:42:36,804] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:42:36] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-06 21:42:36,807] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:42:36] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-06 21:42:36,857] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:42:36] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 21:42:36,918] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:42:36] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-06 21:42:36,990] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:42:36] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 21:42:37,249] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:42:37] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 21:43:59,104] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 21:44:00,097] {_make_request:395} DEBUG - http://127.0.0.1:4000 "POST /api/v1/users/signup HTTP/1.1" 500 1736 
+[2017-05-06 21:44:00,097] {register:79} INFO - <Response [500]> 
+[2017-05-06 21:44:00,106] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:44:00] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-06 21:44:00,179] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:44:00] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-06 21:44:00,182] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:44:00] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-06 21:44:00,183] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:44:00] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-06 21:44:00,242] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:44:00] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 21:44:00,313] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:44:00] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-06 21:44:00,607] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 21:44:00] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 22:39:13,003] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-06 22:39:13,007] {_log:87} INFO -  * Restarting with stat 
+[2017-05-06 22:39:13,518] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-06 22:39:13,536] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-06 22:39:25,663] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:39:25] "GET / HTTP/1.1" 200 - 
+[2017-05-06 22:39:28,013] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:39:28] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-06 22:39:43,577] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 22:39:46,487] {_make_request:395} DEBUG - http://127.0.0.1:4000 "POST /api/v1/users/signup HTTP/1.1" 200 141 
+[2017-05-06 22:39:46,488] {register:79} INFO - <Response [200]> 
+[2017-05-06 22:39:46,498] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:39:46] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-06 22:39:46,595] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:39:46] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-06 22:39:46,598] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:39:46] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-06 22:39:46,600] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:39:46] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-06 22:39:46,684] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:39:46] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 22:39:46,764] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:39:46] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-06 22:39:46,963] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:39:46] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 22:39:47,173] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:39:47] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 22:42:15,102] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-06 22:42:15,103] {_log:87} INFO -  * Restarting with stat 
+[2017-05-06 22:42:15,580] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-06 22:42:15,596] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-06 22:42:19,869] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:42:19] "GET / HTTP/1.1" 200 - 
+[2017-05-06 22:42:22,162] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:42:22] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-06 22:42:34,156] {_new_conn:207} DEBUG - Starting new HTTP connection (1): 127.0.0.1 
+[2017-05-06 22:42:36,372] {_make_request:395} DEBUG - http://127.0.0.1:4000 "POST /api/v1/users/signup HTTP/1.1" 200 119 
+[2017-05-06 22:42:36,372] {register:79} INFO - <Response [200]> 
+[2017-05-06 22:42:36,383] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:42:36] "POST /account/register HTTP/1.1" 500 - 
+[2017-05-06 22:42:36,495] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:42:36] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-06 22:42:36,497] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:42:36] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-06 22:42:36,499] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:42:36] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-06 22:42:36,565] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:42:36] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 22:42:36,643] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:42:36] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-06 22:42:36,818] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:42:36] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-06 22:42:37,045] {_log:87} INFO - 127.0.0.1 - - [06/May/2017 22:42:37] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
