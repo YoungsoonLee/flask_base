@@ -9,14 +9,13 @@ from app import logger, backend_url, backend_headers
 from flask import Flask, session
 
 class User():
-
 	def __init__(self, id=None, username=None, token=None, is_active=None, is_authenticated=None, is_anonymous=None, confirmed=None):
 		self.id = id
 		self.username = username
 		self.token = token
-		self.is_active = is_active
-		self.is_authenticated = is_authenticated
-		self.is_anonymous = is_anonymous
+		self.is_active = is_active # active or close
+		self.is_authenticated = is_authenticated # logged in or not
+		self.is_anonymous = is_anonymous # dummy data for flask-login (using guest or not)
 		self.confirmed = confirmed
 
 	def generate_confirmation_token(self, expiration=604800):
@@ -69,25 +68,27 @@ def _user_loader(user):
 	# return User.query.get(int(user_id))
 	
 	# TODO: check exceptopn of requests
-	# GET /api/v@/users/<prefix(me or user_id)> Return user information
 	backend_headers['Authorization'] = 'bearer ' + user['token']
-	url = backend_url+'users/'+str(user['id'])
+	#url = backend_url+'users/'+str(user['id'])
+	url = backend_url+'users/me'
 	r = requests.get(url, headers=backend_headers).json()
 	logger.info(r)
 	
 	if r['status'] == 'fail':
 		return User(
-			id=None, 
-			username=None, 
-			is_active=None, 
-			is_authenticated=None,
-			is_anonymous=None,
-			confirmed=None)
+				id=None, 
+				username=None,
+				token=None,					# hashed token
+				is_active=None, 
+				is_authenticated=None,
+				is_anonymous=None,
+				confirmed=None)
 	else:
 		return User(
 				id=str(r['id']), 
 				username=r['username'], 
-				is_active=True, 
+				token=user['token'],		# hashed token
+				is_active=r['is_active'], 
 				is_authenticated=True,
 				is_anonymous=False,
 				confirmed=r['confirmed'])
