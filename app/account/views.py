@@ -138,6 +138,7 @@ def logout():
 @login_required
 def manage():
     """Display a user's account information."""
+    # logger.info('youngtip >> '+str(current_user.username))
     return render_template('account/manage.html', user=current_user, form=None)
 
 

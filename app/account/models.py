@@ -9,10 +9,11 @@ from app import logger, backend_url, backend_headers
 from flask import Flask, session
 
 class User():
-	def __init__(self, id=None, username=None, token=None, is_active=None, is_authenticated=None, is_anonymous=None, confirmed=None):
+	def __init__(self, id=None, username=None, email=None, token=None, is_active=None, is_authenticated=None, is_anonymous=None, confirmed=None):
 		self.id = id
 		self.username = username
-		self.token = token
+		self.email = email
+		self.token = token # hashed token
 		self.is_active = is_active # active or close
 		self.is_authenticated = is_authenticated # logged in or not
 		self.is_anonymous = is_anonymous # dummy data for flask-login (using guest or not)
@@ -46,13 +47,20 @@ class User():
 		# TODO: send to backend for updating confirm field
 		# TODO: check requests exception
 		url = backend_url+'confirm'
-		logger.info('youngtip >> 4'+url)
 		data = {
 			'token': token,
 			'id': data.get('confirm')
 		}
-		r = requests.post(url, headers=backend_headers, data=data).json()
-		logger.info('youngtip >> ' + url )
+		r = requests.post(url, headers=backend_headers, data=data)
+		try:
+			if r.status_code == 404:
+				r.raise_for_status()
+			else:
+				if r.json()['status'] == 'fail':
+					return False
+		except requests.exceptions.RequestException as e:
+			logger.error(e)
+			return False
 
 		"""
 		self.confirmed = True
@@ -60,7 +68,6 @@ class User():
 		db.session.commit()
 		"""
 
-		# call backend
 		return True
 
 @login_manager.user_loader
@@ -78,7 +85,8 @@ def _user_loader(user):
 		return User(
 				id=None, 
 				username=None,
-				token=None,					# hashed token
+				email=None,
+				token=None,					# hashed token...
 				is_active=None, 
 				is_authenticated=None,
 				is_anonymous=None,
@@ -86,8 +94,9 @@ def _user_loader(user):
 	else:
 		return User(
 				id=str(r['id']), 
-				username=r['username'], 
-				token=user['token'],		# hashed token
+				username=r['username'],
+				email=r['email'], 
+				token=user['token'],		# hashed token...
 				is_active=r['is_active'], 
 				is_authenticated=True,
 				is_anonymous=False,
