@@ -12,10 +12,20 @@ from rq import Connection, Queue, Worker
 from app import create_app
 #from app.models import Role, User
 
+# add youngtip
+from datetime import timedelta
+from flask import session
 
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
 manager = Manager(app)
 #migrate = Migrate(app, db)
+
+# add youngtip
+# set session time
+@app.before_request
+def make_session_permanent():
+    session.permanent = True
+    app.permanent_session_lifetime = timedelta(hours=6)
 
 
 def make_shell_context():

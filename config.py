@@ -39,6 +39,8 @@ class Config:
     EMAIL_SENDER = '{app_name} Admin <{email}>'.format(app_name=APP_NAME, email=MAIL_USERNAME)
 
     REDIS_URL = os.getenv('REDISTOGO_URL') or 'http://localhost:6379'
+    # add youngtip
+    REDIS_TTL = 1 * 60 * 60 * 6 # TTL 6hr
 
     RAYGUN_APIKEY = os.environ.get('RAYGUN_APIKEY')
 

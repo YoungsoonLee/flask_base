@@ -8,7 +8,6 @@ from wtforms.validators import Email, EqualTo, InputRequired, Length
 
 # from ..models import User
 
-
 class LoginForm(FlaskForm):
     email = EmailField('Email', validators=[InputRequired(), Length(1, 64), Email()])
     password = PasswordField('Password', validators=[InputRequired()])
@@ -87,14 +86,12 @@ class ChangePasswordForm(FlaskForm):
 
 
 class ChangeEmailForm(FlaskForm):
-    email = EmailField(
-        'New email', validators=[InputRequired(), Length(1, 64), Email()])
-    password = PasswordField('Password', validators=[InputRequired()])
+    email = EmailField('New email', validators=[InputRequired(), Length(1, 64), Email()])
+    changeEmailPassword = PasswordField('Password', validators=[InputRequired()])
     submit = SubmitField('Update email')
 
+    """
     def validate_email(self, field):
-        pass
-        """
         if User.query.filter_by(email=field.data).first():
             raise ValidationError('Email already registered.')
-        """
+    """

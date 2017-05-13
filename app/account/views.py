@@ -1,4 +1,4 @@
-from flask import flash, redirect, render_template, request, url_for
+from flask import flash, redirect, render_template, request, url_for, session
 from flask_login import (current_user, login_required, login_user, logout_user)
 from flask_rq import get_queue
 
@@ -13,8 +13,14 @@ from .forms import (ChangeEmailForm, ChangePasswordForm, CreatePasswordForm,
 
 # add youngtip
 import requests
-from app import logger, backend_url, backend_headers
-from ..utils import is_success
+from app import logger, backend_url, backend_headers, redis_ttl
+import pickle
+import time
+# from app import redis_store
+# from flask import make_response # using cookie
+import httplib2
+import urllib
+from json import loads, dumps
 
 @account.route('/login', methods=['GET', 'POST'])
 def login():
@@ -28,33 +34,69 @@ def login():
             'password': form.password.data
         }
 
-        r = requests.post(url, headers=backend_headers, data=data)
-        logger.info(r)
-
         try:
-            if r.status_code == 404:
-                r.raise_for_status()
+            #processing start
+            start_time = time.time()
+            # r = requests.post(url, headers=backend_headers, data=data)
+
+            h = httplib2.Http(".cache")
+            #(resp, content) = h.request(url, "POST", body=urllib.parse.urlencode(data), headers=backend_headers)
+            (resp, content) = h.request(url, "POST", body=dumps(data), headers=backend_headers)
+            r = loads(content)
+            logger.info(r)
+
+            end_time = time.time()
+            logger.info('login time >> '+str(end_time - start_time))
+            #logger.info(r.json())
+            
+            if resp.status == 404:
+                # r.raise_for_status()
+                raise httplib2.ServerNotFoundError('restful api uri not found')
             else:
-                if r.json()['status'] == 'fail':
-                    flash('Invalid email or password.', 'form-error')
+                if r['status'] == 'fail':
+                    flash(r['message'], 'form-error')
                 else:
-                    logger.info(r.json())
-                    # make user info
+                    # logger.info(r.json())
+                    # make user email info
+                    maked_email = ''
+                    index_email = str(r['data']['email']).index('@')
+                    for i in range(0,index_email):
+                        if i ==0:
+                            maked_email = maked_email+str(r['data']['email'])[0:1]
+                        else:
+                            maked_email = maked_email+'*'
+                    maked_email = maked_email+str(r['data']['email'])[index_email:]
+
                     user = User(
-                        id = r.json()['data']['user_id'], 
-                        username = r.json()['data']['username'],
-                        token = r.json()['data']['token'],
-                        is_active = r.json()['data']['is_active'],
+                        id = r['data']['user_id'], 
+                        username = r['data']['username'],
+                        email = maked_email,
+                        token = r['data']['token'],
+                        is_active = r['data']['is_active'],
                         is_authenticated = True,
-                        confirmed = r.json()['data']['confirmed']
+                        confirmed = r['data']['confirmed']
                     )
-                    # test exception 
-                    # raise requests.exceptions.RequestException
+                    # using redis
+                    """
+                    redis_store.set(r.json()['data']['user_id'], pickle.dumps(user))
+                    redis_store.expire(r.json()['data']['user_id'], redis_ttl) # set expire key, 6hr
+                    """
+
+                    # using cookie
+                    """
+                    resp = make_response(redirect(request.args.get('next') or url_for('main.index')))
+                    resp.set_cookie('username', 'the username')
+                    return resp
+                    """
+
                     login_user(user, form.remember_me.data)
                     flash('You are now logged in. Welcome back!', 'success')
-                    return redirect(request.args.get('next') or url_for('main.index'))
 
-        except requests.exceptions.RequestException as e:
+                    return redirect(request.args.get('next') or url_for('main.index'))
+                    
+
+        # except requests.exceptions.RequestException as e:
+        except Exception as e:
             logger.error(e)
             flash('oops...'+'{'+str(e)+'}', 'form-error')
 
@@ -73,37 +115,38 @@ def register():
                 'username': form.first_name.data+','+form.last_name.data,
                 'password': form.password.data
                 }
-
-        r = requests.post(url, headers=backend_headers, data=data)
-        logger.info(r)
-
         try:
+
+            r = requests.post(url, headers=backend_headers, data=data)
+            logger.info(r.json())
+
             if r.status_code == 404:
                 r.raise_for_status()
             else:
                 if r.json()['status'] == 'fail':
-                    flash('Oops...Server has some trouble. :(', 'form-error')
+                    flash(r.json()['message'], 'form-error')
                 else:
                     user = User(
                         id = r.json()['id'],
                         username=form.first_name.data+','+form.last_name.data
                     )
                 
-                confirm_token = user.generate_confirmation_token()
-                confirm_link = url_for('account.confirm', token=confirm_token, _external=True)
-                # TODO: RQ
-                get_queue().enqueue(
-                    send_email,
-                    recipient=form.email.data,
-                    subject='Confirm Your Account',
-                    template='account/email/confirm',
-                    user=user,
-                    confirm_link=confirm_link)
-                
-                # test mail
-                # send_email('youngtip@gmail.com','Confirm Your Account','account/email/confirm',user=user, confirm_link=confirm_link)
-                flash('A confirmation link has been sent to {}.'.format(form.email.data), 'warning')
-                return redirect(url_for('main.index'))
+                    confirm_token = user.generate_confirmation_token()
+                    confirm_link = url_for('account.confirm', token=confirm_token, _external=True)
+                    # TODO: RQ
+                    get_queue().enqueue(
+                        send_email,
+                        recipient=form.email.data,
+                        subject='Confirm Your Account',
+                        template='account/email/confirm',
+                        user=user,
+                        confirm_link=confirm_link)
+                    
+                    # test mail
+                    # send_email('youngtip@gmail.com','Confirm Your Account','account/email/confirm',user=user, confirm_link=confirm_link)
+                    flash('A confirmation link has been sent to {}.'.format(form.email.data), 'warning')
+                    return redirect(url_for('main.index'))
+                    
         except requests.exceptions.RequestException as e:
             logger.error(e)
             flash('oops...'+'{'+str(e)+'}', 'form-error')
@@ -114,19 +157,17 @@ def register():
 @account.route('/logout')
 @login_required
 def logout():
-    # call backend
-    user = current_user
-    # logger.info('youngtip >> ' + str(user.token))
-
     # POST /api/v@/logout Sign out
-    # TODO: how do exception ???
+    # TODO: how do exception with async
     url = backend_url+'logout'
     backend_authed_headers = {
         'Accept': 'application/json',
-        'Authorization': 'bearer ' + user.token
+        'Authorization': 'bearer ' + current_user.token
     }
     r = requests.post(url, headers=backend_authed_headers)
-    logger.info(r)
+
+    # using remove redis with async
+    # redis_store.delete(current_user.id)
 
     logout_user()
     flash('You have been logged out.', 'info')
@@ -138,7 +179,6 @@ def logout():
 @login_required
 def manage():
     """Display a user's account information."""
-    # logger.info('youngtip >> '+str(current_user.username))
     return render_template('account/manage.html', user=current_user, form=None)
 
 
@@ -149,6 +189,9 @@ def reset_password_request():
         return redirect(url_for('main.index'))
     form = RequestResetPasswordForm()
     if form.validate_on_submit():
+        user = User.query.filter_by(email=form.email.data).first()
+        logger.info(user)
+
         pass
         """
         user = User.query.filter_by(email=form.email.data).first()
@@ -221,27 +264,61 @@ def change_email_request():
     """Respond to existing user's request to change their email."""
     form = ChangeEmailForm()
     if form.validate_on_submit():
-        pass
-        """
-        if current_user.verify_password(form.password.data):
-            new_email = form.email.data
-            token = current_user.generate_email_change_token(new_email)
-            change_email_link = url_for('account.change_email', token=token, _external=True)
-            get_queue().enqueue(
-                send_email,
-                recipient=new_email,
-                subject='Confirm Your New Email',
-                template='account/email/change_email',
-                # current_user is a LocalProxy, we want the underlying user
-                # object
-                user=current_user._get_current_object(),
-                change_email_link=change_email_link)
-            flash('A confirmation link has been sent to {}.'.format(new_email),
-                  'warning')
-            return redirect(url_for('main.index'))
-        else:
-            flash('Invalid email or password.', 'form-error')
-        """
+        # TODO : call rest
+        url = backend_url+'users/me'
+        backend_authed_headers = {
+            'Accept': 'application/json',
+            'Authorization': 'bearer ' + current_user.token
+        }
+        data = {
+            'change_email': form.email.data,
+            'password': form.changeEmailPassword.data
+        }
+
+        start_time4 = time.time()
+        logger.info('change email start time4 >> '+str(start_time4))
+
+        try:
+            h = httplib2.Http(".cache")
+            #(resp, content) = h.request(url, "POST", body=urllib.parse.urlencode(data), headers=backend_headers)
+            (resp, content) = h.request(url, "PUT", body=dumps(data), headers=backend_authed_headers)
+            r = loads(content)
+
+            start_time5 = time.time()
+            logger.info('change email start time5 >> '+str(start_time5))
+            logger.info('change email start time5 >> '+str(start_time5-start_time4))
+
+            if resp.status == 404:
+                # r.raise_for_status()
+                raise httplib2.ServerNotFoundError('restful api uri not found')
+            else:
+                if r['status'] == 'fail':
+                    flash(r['message'], 'form-error')
+                else:
+                    new_email = form.email.data
+                    token = current_user.generate_email_change_token(new_email)
+                    change_email_link = url_for('account.change_email', token=token, _external=True)
+                    get_queue().enqueue(
+                        send_email,
+                        recipient=new_email,
+                        subject='Confirm Your New Email',
+                        template='account/email/change_email',
+                        # current_user is a LocalProxy, we want the underlying user
+                        # object
+                        user=current_user._get_current_object(),
+                        change_email_link=change_email_link)
+                    
+                    logout_user()
+                    flash('A confirmation link has been sent to {}.'.format(new_email), 'warning')
+                    flash('You have been logged out. relogin again with new email', 'info')
+
+                    return redirect(url_for('main.index'))
+
+        # except requests.exceptions.RequestException as e:
+        except Exception as e:
+            logger.error(e)
+            flash('oops...'+'{'+str(e)+'}', 'form-error')
+
     return render_template('account/manage.html', form=form)
 
 
@@ -341,9 +418,16 @@ def join_from_invite(user_id, token):
 @account.before_app_request
 def before_request():
     """Force user to confirm email before accessing login-required routes."""
+    # logger.info('youngtip >> '+str(request.endpoint))   
+    # check_endpoint = ''
+    if request.endpoint is not None:
+        check_endpoint = request.endpoint[0:8]
+    else:
+        check_endpoint = None
+    
     if current_user.is_authenticated \
             and not current_user.confirmed \
-            and request.endpoint[:8] != 'account.' \
+            and check_endpoint != 'account.' \
             and request.endpoint != 'static':
         return redirect(url_for('account.unconfirmed'))
 

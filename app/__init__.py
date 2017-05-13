@@ -11,6 +11,10 @@ from flask_rq import RQ
 from config import config
 from .assets import app_css, app_js, vendor_css, vendor_js
 
+# add youngtip
+# from flask_redis import FlaskRedis # using redis
+#import requests
+
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -18,6 +22,9 @@ mail = Mail()
 
 # db = SQLAlchemy()
 # csrf = CsrfProtect()
+COMPRESS_MIMETYPES = ['text/html', 'text/css', 'text/xml', 'application/json', 'application/javascript']
+COMPRESS_LEVEL = 6
+COMPRESS_MIN_SIZE = 500
 compress = Compress()
 
 # Set up Flask-Login
@@ -37,6 +44,13 @@ logger = logging.getLogger()
 backend_url = config['default'].BACKEND_URL
 backend_headers = config['default'].BACKEND_HEADERS
 
+# set up redis ttl
+redis_ttl = config['default'].REDIS_TTL
+
+# add youngtip
+# redis_store = FlaskRedis()
+
+#s_req = requests.Session()
 
 def create_app(config_name):
     app = Flask(__name__)
@@ -53,6 +67,10 @@ def create_app(config_name):
     #csrf.init_app(app)
     compress.init_app(app)
     RQ(app)
+
+    # add youngtip
+    # redis_store.init_app(app) # using redis
+
 
     # Register Jinja template functions
     from .utils import register_template_utils

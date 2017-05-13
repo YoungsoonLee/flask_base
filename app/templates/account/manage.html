@@ -42,7 +42,7 @@
             </div>
             <div class="eight wide column">
                 {% if form %}
-                    {{ f.render_form(form, extra_classes='fluid') }}
+                    {{ f.render_form(form, extra_classes='column') }}
                 {% else %}
                     {{ user_info(user) }}
                 {% endif %}
