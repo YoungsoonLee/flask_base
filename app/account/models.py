@@ -39,6 +39,7 @@ class User():
 		}
 		return _data
 
+
 	def confirm_account(self, token):
 		"""Verify that the provided token is for this user's id."""
 		s = Serializer(current_app.config['SECRET_KEY'])
@@ -198,5 +199,27 @@ def _user_loader(user):
 					is_anonymous=False,
 					confirmed=unpacked_user.confirmed)
 	"""
+
+def make_user(r_user):
+	maked_email = ''
+	index_email = str(r_user['email']).index('@')
+	for i in range(0,index_email):
+		if i ==0:
+			maked_email = maked_email+str(r_user['email'])[0:1]
+		else:
+			maked_email = maked_email+'*'
+			maked_email = maked_email+str(r_user['email'])[index_email:]
+
+	user = User(
+		id = r_user['id'], 
+		username = r_user['username'],
+		email = maked_email,
+		token = r_user['token'],
+		is_active = r_user['is_active'],
+		is_authenticated = True,
+		confirmed = r_user['confirmed']
+		)
+
+	return user
 
 

@@ -58,7 +58,10 @@ class Config:
     
     # for backend Frest
     BACKEND_URL = 'http://127.0.0.1:3000/api/v1/'
-    BACKEND_HEADERS = {'Accept': 'application/json'}
+    BACKEND_HEADERS = {
+        'Content-Type':'application/x-www-form-urlencoded', 
+        'Accept': 'application/json'
+        }
 
     @staticmethod
     def init_app(app):
