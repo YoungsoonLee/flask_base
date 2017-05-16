@@ -4,6 +4,60 @@
     <div class="ui text container">
       <h1>Hello {% if not (current_user.is_authenticated) %} world {% else %} {{ current_user.username }} {% endif %},</h1>
 
+        <div class="ui comments">
+            <div class="comment">
+                <div class="content">
+                  <a class="author">Web</a>
+                </div>
+                
+                    <div class="comments">
+                      <div class="comment">
+                        <div class="content">
+                          <a class="author">Register</a>
+                          <div class="text">
+                            register contents
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="comments">
+                      <div class="comment">
+                        <div class="content">
+                          <a class="author">Login</a>
+                          <div class="text">
+                            login contents
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="comments">
+                      <div class="comment">
+                        <div class="content">
+                          <a class="author">manage info</a>
+                          <div class="text">
+                            manage contents
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="comments">
+                      <div class="comment">
+                        <div class="content">
+                          <a class="author">etc</a>
+                          <div class="text">
+                            <li><i>check email domain</i></li>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+            </div>
+        </div>
+
+        <!--
         <p>This is <a href="http://hack4impact.org">Hack4Impact</a>'s web application template. We'll use this as a
         foundation for each of our <a href="http://flask.pocoo.org">Flask</a> projects. The goal is to reduce the work
         necessary to get a new project off the ground, by providing boilerplate code (such as account management
@@ -13,5 +67,6 @@
         in Miguel Grinberg's book, <a href="http://flaskbook.com"><em>Flask Web Development</em></a>.</p>
 
         <p>{{ lipsum(6) }}</p>
+        -->
     </div>
 {% endblock %}

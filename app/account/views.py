@@ -6,7 +6,7 @@ from . import account
 # from .. import db
 from ..email import send_email
 
-from .models import User, make_user
+from .models import User, check_reset_password_token
 from .forms import (ChangeEmailForm, ChangePasswordForm, CreatePasswordForm,
                     LoginForm, RegistrationForm, RequestResetPasswordForm,
                     ResetPasswordForm)
@@ -44,20 +44,6 @@ def login():
             (resp, content) = h.request(url, "POST", body=urllib.parse.urlencode(data), headers=backend_headers)
             r = loads(content)
             logger.info(r)
-            
-            """
-            url = URL(url)
-            http = HTTPClient.from_url(url)
-            response = http.post(url.request_uri, body=urllib.parse.urlencode(data), headers=backend_headers)
-            logger.info(response)
-            """
-
-            """
-            http = urllib3.PoolManager()
-            r = http.request('POST', url, fields=data, headers={'Accept': 'application/json'})
-            # r = loads(r)
-            logger.info(r)
-            """
 
             end_time = time.time()
             logger.info('login time >> '+str(end_time - start_time))
@@ -68,7 +54,28 @@ def login():
                 if r['status'] == 'fail':
                     flash(r['message'], 'form-error')
                 else:
-                    user = make_user(r['data'])
+                    # more consider
+                    """
+                    maked_email = ''
+                    index_email = str(r_user['email']).index('@')
+                    for i in range(0,index_email):
+                        if i ==0:
+                            maked_email = str(r_user['email'])[0:1]
+                        else:
+                            maked_email = maked_email+'*'
+                    maked_email = maked_email+str(r_user['email'])[index_email:]
+                    """
+                    # for login info
+                    user = User(
+                        id = r['data']['user_id'], 
+                        username = r['data']['username'],
+                        # email = maked_email,
+                        email = r['data']['email'],
+                        token = r['data']['token'],
+                        is_active = r['data']['is_active'],
+                        is_authenticated = True,
+                        confirmed = r['data']['confirmed']
+                    )
 
                     # using redis
                     """
@@ -113,12 +120,13 @@ def register():
             r = loads(content)
             logger.info(r)
 
-            if resp.status == 404:
+            if resp.status in (404,405) or resp.status < 200:
                 raise httplib2.ServerNotFoundError('restful api uri not found')
             else:
                 if r['status'] == 'fail':
                     flash(r['field'] +' '+ r['message'], 'form-error')
                 else:
+                    # for send mail
                     user = User(
                         id = r['id'],
                         username=form.first_name.data+','+form.last_name.data
@@ -135,8 +143,6 @@ def register():
                         user=user,
                         confirm_link=confirm_link)
                     
-                    # test mail
-                    # send_email('youngtip@gmail.com','Confirm Your Account','account/email/confirm',user=user, confirm_link=confirm_link)
                     flash('A confirmation link has been sent to {}.'.format(form.email.data), 'warning')
                     return redirect(url_for('main.index'))
                     
@@ -178,12 +184,12 @@ def manage():
     return render_template('account/manage.html', user=current_user, form=None)
 
 
+# forgot-password
 @account.route('/reset-password', methods=['GET', 'POST'])
 def reset_password_request():
     """Respond to existing user's request to reset their password."""
-    if not current_user.is_anonymous:
-        return redirect(url_for('main.index'))
     form = RequestResetPasswordForm()
+
     if form.validate_on_submit():
         # TODOO: call to restful
         url = backend_url+'auth'
@@ -196,23 +202,24 @@ def reset_password_request():
             r = loads(content)
             logger.info(r)
 
-            if resp.status == 404:
+            if resp.status in (404,405) or resp.status < 200:
                 raise httplib2.ServerNotFoundError('restful api uri not found')
             else:
                 if r['status'] == 'fail':
                     flash(r['message'], 'form-error')
                 else:
-                    # TODO: make function
-                    # dummy set token
-                    r['data']['token'] = None
-                    user = make_user(r['data'])
+                    # for send mail
+                    user = User(
+                        id = r['data']['id'],
+                        username=r['data']['username']
+                    )
 
-                    token = user.generate_password_reset_token()
-                    reset_link = url_for(
-                        'account.reset_password', token=token, _external=True)
+                    token = user.generate_password_reset_token() # reset token
+                    reset_link = url_for('account.reset_password', token=token, _external=True)
+
                     get_queue().enqueue(
                         send_email,
-                        recipient=user.email,
+                        recipient=form.email.data,
                         subject='Reset Your Password',
                         template='account/email/reset_password',
                         user=user,
@@ -232,24 +239,37 @@ def reset_password_request():
 @account.route('/reset-password/<token>', methods=['GET', 'POST'])
 def reset_password(token):
     """Reset an existing user's password."""
-    if not current_user.is_anonymous:
-        return redirect(url_for('main.index'))
     form = ResetPasswordForm()
+
     if form.validate_on_submit():
-        pass
-        """
-        user = User.query.filter_by(email=form.email.data).first()
-        if user is None:
-            flash('Invalid email address.', 'form-error')
-            return redirect(url_for('main.index'))
-        if user.reset_password(token, form.new_password.data):
-            flash('Your password has been updated.', 'form-success')
-            return redirect(url_for('account.login'))
+        # TODOO: call to restful
+        url = backend_url+'auth/reset_password'
+        data = {
+                'email': form.email.data,
+                'new_password': form.new_password.data
+                }
+
+        if check_reset_password_token(token) is None:
+            flash('The password reset link is invalid or has expired.', 'form-error')
+            # return redirect(url_for('main.index')) # not working, why?
         else:
-            flash('The password reset link is invalid or has expired.',
-                  'form-error')
-            return redirect(url_for('main.index'))
-        """
+            try:
+                h = httplib2.Http(".cache")
+                (resp, content) = h.request(url, "POST", body=urllib.parse.urlencode(data), headers=backend_headers)
+                r = loads(content)
+                logger.info(r)
+
+                if resp.status in (404,405) or resp.status < 200:
+                    raise httplib2.ServerNotFoundError('restful api uri not found')
+                else:
+                    if r['status'] == 'fail':
+                        flash(r['message'], 'form-error')
+                    else:
+                        flash('Your password has been updated.', 'form-success')
+                        return redirect(url_for('account.login'))
+            except Exception as e:
+                logger.error(e)
+                flash('oops...'+'{'+str(e)+'}', 'form-error')
     return render_template('account/reset_password.html', form=form)
 
 
@@ -259,17 +279,38 @@ def change_password():
     """Change an existing user's password."""
     form = ChangePasswordForm()
     if form.validate_on_submit():
-        pass
-        """
-        if current_user.verify_password(form.old_password.data):
-            current_user.password = form.new_password.data
-            db.session.add(current_user)
-            db.session.commit()
-            flash('Your password has been updated.', 'form-success')
-            return redirect(url_for('main.index'))
-        else:
-            flash('Original password is invalid.', 'form-error')
-        """
+        url = backend_url+'auth/reset_password'
+        backend_authed_headers = {
+            'Content-Type':'application/x-www-form-urlencoded', 
+            'Accept': 'application/json',
+            'Authorization': 'bearer ' + current_user.token
+        }
+        data = {
+            'email': current_user.email,
+            'old_password': form.old_password.data,
+            'new_password': form.new_password.data
+        }
+
+        try:
+            h = httplib2.Http(".cache")
+            (resp, content) = h.request(url, "PUT", body=urllib.parse.urlencode(data), headers=backend_authed_headers)
+            r = loads(content)
+            logger.info(r)
+
+            if resp.status in (404,405) or resp.status < 200:
+                raise httplib2.ServerNotFoundError('restful api uri not found')
+            else:
+                if r['status'] == 'fail':
+                    flash(r['message'], 'form-error')
+                else:
+                    logout_user()
+                    flash('Your password has been updated.', 'form-success')
+                    flash('You have been logged out. relogin again with new email', 'info')
+                    return redirect(url_for('account.login'))
+        except Exception as e:
+            logger.error(e)
+            flash('oops...'+'{'+str(e)+'}', 'form-error')
+            
     return render_template('account/manage.html', form=form)
 
 
@@ -291,9 +332,9 @@ def change_email_request():
             'changeEmailPassword': form.changeEmailPassword.data
         }
 
-        start_time = time.time()
-
         try:
+            start_time = time.time()
+
             h = httplib2.Http(".cache")
             (resp, content) = h.request(url, "PUT", body=urllib.parse.urlencode(data), headers=backend_authed_headers)
             r = loads(content)
@@ -352,7 +393,6 @@ def confirm_request():
     """Respond to new user's request to confirm their account."""
     token = current_user.generate_confirmation_token()
     confirm_link = url_for('account.confirm', token=token, _external=True)
-    """
     get_queue().enqueue(
         send_email,
         recipient=current_user.email,
@@ -362,7 +402,6 @@ def confirm_request():
         user=current_user._get_current_object(),
         confirm_link=confirm_link)
     flash('A new confirmation link has been sent to {}.'.format(current_user.email), 'warning')
-    """
     return redirect(url_for('main.index'))
 
 
@@ -372,8 +411,14 @@ def confirm(token):
     """Confirm new user's account with provided token."""
     if current_user.confirmed:
         return redirect(url_for('main.index'))
-    if current_user.confirm_account(token):
+
+    user = current_user.confirm_account(token) # call rest and reflash user info
+
+    if user is not None:
         flash('Your account has been confirmed.', 'success')
+        # reload user info 
+        login_user(user)
+
     else:
         flash('The confirmation link is invalid or has expired.', 'error')
     return redirect(url_for('main.index'))

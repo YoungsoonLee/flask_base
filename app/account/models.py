@@ -11,8 +11,11 @@ from app import logger, backend_url, backend_headers, redis_ttl
 # add youngtip
 # from app import redis_store
 import pickle
-import json
+from json import loads, dumps
 import ast
+
+import httplib2
+import urllib
 
 class User():
 	def __init__(self, id=None, username=None, email=None, token=None, is_active=None, is_authenticated=None, is_anonymous=None, confirmed=None):
@@ -46,52 +49,96 @@ class User():
 		try:
 			data = s.loads(token)
 		except (BadSignature, SignatureExpired):
-			return False
+			return None
 
 		# change compare with str
 		if str(data.get('confirm')) != str(self.id):
-			return False
+			return None
 
 		# TODO: send to backend for updating confirm field
-		# TODO: check requests exception
 		url = backend_url+'confirm'
 		data = {
 			'token': token,
 			'id': data.get('confirm')
 		}
-		r = requests.post(url, headers=backend_headers, data=data)
+
 		try:
-			if r.status_code == 404:
-				r.raise_for_status()
+			h = httplib2.Http(".cache")
+			(resp, content) = h.request(url, "POST", body=urllib.parse.urlencode(data), headers=backend_headers)
+			r = loads(content)
+			logger.info(r)
+
+			if resp.status in (404,405) or resp.status < 200:
+				raise httplib2.ServerNotFoundError('restful api uri not found. {}'.format(r['message']))
 			else:
-				if r.json()['status'] == 'fail':
-					return False
-		except requests.exceptions.RequestException as e:
+				if r['status'] == 'fail':
+					return None
+				else:
+					# for login info
+					user = User(
+						id = r['data']['user_id'], 
+						username = r['data']['username'],
+						# email = maked_email,
+						email = r['data']['email'],
+						token = r['data']['token'],
+						is_active = r['data']['is_active'],
+						is_authenticated = True,
+						confirmed = r['data']['confirmed']
+					)
+
+					return user
+
+		except Exception as e:
 			logger.error(e)
-			return False
+			# flash('oops...'+'{'+str(e)+'}', 'form-error')
+			return None
+
+
 		"""
 		self.confirmed = True
 		db.session.add(self)
 		db.session.commit()
 		"""
-		return True
-
-	def generate_confirmation_token(self, expiration=604800):
+		
+	def generate_confirmation_token(self, expiration=604800): # expire 7 days
 		"""Generate a confirmation token to email a new user."""
 		s = Serializer(current_app.config['SECRET_KEY'], expiration)
 		return s.dumps({'confirm': self.id})
 
-	def generate_email_change_token(self, new_email, expiration=3600):
+	def generate_email_change_token(self, new_email, expiration=3600): # 1 hour
 		"""Generate an email change token to email an existing user."""
 		s = Serializer(current_app.config['SECRET_KEY'], expiration)
 		return s.dumps({'change_email': self.id, 'new_email': new_email})
 
-	def generate_password_reset_token(self, expiration=3600):
+	def generate_password_reset_token(self, expiration=3600): # 1 hour
 		"""
 		Generate a password reset change token to email to an existing user.
 		"""
 		s = Serializer(current_app.config['SECRET_KEY'], expiration)
 		return s.dumps({'reset': self.id})
+
+	"""
+	def reset_password(self, token, new_password):
+		s = Serializer(current_app.config['SECRET_KEY'])
+		try:
+			data = s.loads(token)
+		except (BadSignature, SignatureExpired):
+			return False
+		if data.get('reset') != self.id:
+			return False
+		return True
+	"""
+
+
+def check_reset_password_token(token):
+	s = Serializer(current_app.config['SECRET_KEY'])
+	try:
+		data = s.loads(token)
+	except (BadSignature, SignatureExpired) as e:
+		logger.info(e)
+		return None
+
+	return str(data.get('reset'))
 
 
 @login_manager.user_loader
@@ -101,9 +148,6 @@ def _user_loader(user):
 	if type(user) != dict:
 		user = ast.literal_eval(user)
 
-	#logger.info(user)
-	#logger.info(type(user))
-	
 	user = User(
 				id=str(user['id']), 
 				username=user['username'],
@@ -200,20 +244,25 @@ def _user_loader(user):
 					confirmed=unpacked_user.confirmed)
 	"""
 
+"""
 def make_user(r_user):
+	# more consider
+	'''
 	maked_email = ''
 	index_email = str(r_user['email']).index('@')
 	for i in range(0,index_email):
 		if i ==0:
-			maked_email = maked_email+str(r_user['email'])[0:1]
+			maked_email = str(r_user['email'])[0:1]
 		else:
 			maked_email = maked_email+'*'
-			maked_email = maked_email+str(r_user['email'])[index_email:]
+	maked_email = maked_email+str(r_user['email'])[index_email:]
+	'''
 
 	user = User(
 		id = r_user['id'], 
 		username = r_user['username'],
-		email = maked_email,
+		# email = maked_email,
+		email = r_user['email'],
 		token = r_user['token'],
 		is_active = r_user['is_active'],
 		is_authenticated = True,
@@ -221,5 +270,5 @@ def make_user(r_user):
 		)
 
 	return user
-
+"""
 
