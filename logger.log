@@ -11267,3 +11267,11 @@
 [2017-05-16 14:50:34,371] {_log:87} INFO -  * Restarting with stat 
 [2017-05-16 14:50:35,094] {_log:87} WARNING -  * Debugger is active! 
 [2017-05-16 14:50:35,109] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-16 14:53:37,541] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-16 14:53:37,542] {_log:87} INFO -  * Restarting with stat 
+[2017-05-16 14:53:38,061] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-16 14:53:38,072] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-16 14:53:39,742] {_log:87} INFO - 127.0.0.1 - - [16/May/2017 14:53:39] "GET / HTTP/1.1" 200 - 
+[2017-05-16 14:53:41,952] {_log:87} INFO - 127.0.0.1 - - [16/May/2017 14:53:41] "GET /about HTTP/1.1" 200 - 
+[2017-05-16 14:53:58,768] {_log:87} INFO - 127.0.0.1 - - [16/May/2017 14:53:58] "GET /account/manage/info HTTP/1.1" 200 - 
+[2017-05-16 14:54:02,244] {_log:87} INFO - 127.0.0.1 - - [16/May/2017 14:54:02] "GET / HTTP/1.1" 200 - 
