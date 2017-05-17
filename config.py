@@ -57,7 +57,7 @@ class Config:
     RQ_DEFAULT_DB = 0
     
     # for backend Frest
-    BACKEND_URL = 'http://127.0.0.1:3000/api/v1/'
+    BACKEND_URL = os.getenv('BACKEND_URL') or 'http://127.0.0.1:3000/api/v1/'
     BACKEND_HEADERS = {
         'Content-Type':'application/x-www-form-urlencoded', 
         'Accept': 'application/json'
