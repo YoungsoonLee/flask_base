@@ -28,7 +28,7 @@ class Config:
         print('SECRET KEY ENV VAR NOT SET! SHOULD NOT SEE IN PRODUCTION')
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
 
-    MAIL_SERVER = 'smtp.sendgrid.net'
+    MAIL_SERVER = os.environ.get('MAIL_SERVER') or 'smtp.sendgrid.net'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get('SENDGRID_USERNAME')
@@ -39,7 +39,7 @@ class Config:
     EMAIL_SUBJECT_PREFIX = '[{}]'.format(APP_NAME)
     EMAIL_SENDER = '{app_name} Admin <{email}>'.format(app_name=APP_NAME, email=MAIL_USERNAME)
 
-    REDIS_URL = os.getenv('REDISTOGO_URL') or 'http://localhost:6379'
+    REDIS_URL = os.getenv('REDISTOGO_URL') or 'redis://localhost:6379'
 
     # add youngtip
     REDIS_TTL = 1 * 60 * 60 * 6 # TTL 6hr

@@ -11411,3 +11411,332 @@
 [2017-05-16 22:58:35,453] {_log:87} INFO - 127.0.0.1 - - [16/May/2017 22:58:35] "GET / HTTP/1.1" 200 - 
 [2017-05-16 22:58:36,633] {_log:87} INFO - 127.0.0.1 - - [16/May/2017 22:58:36] "GET /backend HTTP/1.1" 200 - 
 [2017-05-16 22:58:38,084] {_log:87} INFO - 127.0.0.1 - - [16/May/2017 22:58:38] "GET /about HTTP/1.1" 200 - 
+[2017-05-17 14:14:04,118] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-17 14:14:04,127] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 14:14:04,707] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 14:14:04,727] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 14:14:46,483] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:14:46] "GET / HTTP/1.1" 200 - 
+[2017-05-17 14:14:46,507] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:14:46] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 304 - 
+[2017-05-17 14:14:46,510] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:14:46] "GET /static/styles/app.css?873aca08 HTTP/1.1" 304 - 
+[2017-05-17 14:14:46,513] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:14:46] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 304 - 
+[2017-05-17 14:14:46,517] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:14:46] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 304 - 
+[2017-05-17 14:14:46,520] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:14:46] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 304 - 
+[2017-05-17 14:14:46,524] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:14:46] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 304 - 
+[2017-05-17 14:14:46,528] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:14:46] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 304 - 
+[2017-05-17 14:14:47,298] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:14:47] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 304 - 
+[2017-05-17 14:14:56,470] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:14:56] "GET /backend HTTP/1.1" 200 - 
+[2017-05-17 14:14:57,806] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:14:57] "GET /about HTTP/1.1" 200 - 
+[2017-05-17 14:14:59,533] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:14:59] "GET / HTTP/1.1" 200 - 
+[2017-05-17 14:15:02,656] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:15:02] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 14:15:11,288] {login:46} INFO - {'code': 400, 'message': 'User does not exist or the password does not match.', 'status': 'fail'} 
+[2017-05-17 14:15:11,288] {login:49} INFO - login time >> 1.2654471397399902 
+[2017-05-17 14:15:11,296] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:15:11] "POST /account/login HTTP/1.1" 200 - 
+[2017-05-17 14:15:22,858] {login:46} INFO - {'code': 200, 'data': {'confirmed': True, 'created_at': '2017-05-17T14:15:22.461081', 'email': 'youngtip@gmail.com', 'expired_at': '2017-11-13T14:15:22.461081', 'is_active': True, 'scheme': 'bearer', 'token': 'd710e817b080df2d7b5432ed2598b25d62cc0db8c6134c6a693398aeffef9fcfab7928fb403f9ac832bfe4af846439d5', 'user_id': 13, 'username': 'youngsoonn,lee'}, 'status': 'success'} 
+[2017-05-17 14:15:22,859] {login:49} INFO - login time >> 1.9014909267425537 
+[2017-05-17 14:15:22,862] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:15:22] "POST /account/login HTTP/1.1" 302 - 
+[2017-05-17 14:15:22,876] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:15:22] "GET / HTTP/1.1" 200 - 
+[2017-05-17 14:15:24,629] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:15:24] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-17 14:39:54,019] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:39:54] "GET /account/manage/info HTTP/1.1" 200 - 
+[2017-05-17 14:39:56,581] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:39:56] "GET /account/logout HTTP/1.1" 302 - 
+[2017-05-17 14:39:56,633] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:39:56] "GET / HTTP/1.1" 200 - 
+[2017-05-17 14:39:58,566] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:39:58] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 14:39:59,836] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:39:59] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 14:40:41,325] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:40:41] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 14:40:56,596] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:40:56] "GET /account/register HTTP/1.1" 500 - 
+[2017-05-17 14:40:56,669] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:40:56] "GET /account/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - 
+[2017-05-17 14:40:56,672] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:40:56] "GET /account/register?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 - 
+[2017-05-17 14:40:56,682] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:40:56] "GET /account/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - 
+[2017-05-17 14:40:57,124] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:40:57] "GET /account/register?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - 
+[2017-05-17 14:40:57,351] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:40:57] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-17 14:40:57,516] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:40:57] "GET /account/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - 
+[2017-05-17 14:42:18,339] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 14:42:18,410] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 14:42:19,176] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 14:42:19,192] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 14:42:21,879] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:42:21] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 14:43:19,714] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-17 14:43:19,756] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 14:43:20,453] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 14:43:20,469] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 14:43:39,604] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/views.py', reloading 
+[2017-05-17 14:43:39,644] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 14:43:40,139] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 14:43:40,150] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 14:44:48,572] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:44:48] "GET / HTTP/1.1" 200 - 
+[2017-05-17 14:45:09,846] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:45:09] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 14:45:30,671] {register:121} INFO - {'code': 400, 'field': 'Email', 'message': "'youngtip@gmail.com' is already exists.", 'status': 'fail'} 
+[2017-05-17 14:45:30,680] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:45:30] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 14:45:41,427] {register:121} INFO - {'code': 201, 'id': 17, 'status': 'success'} 
+[2017-05-17 14:45:41,434] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:45:41] "POST /account/register HTTP/1.1" 302 - 
+[2017-05-17 14:45:41,459] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:45:41] "GET / HTTP/1.1" 200 - 
+[2017-05-17 14:45:42,681] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:45:42] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-17 14:45:46,541] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:45:46] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 14:46:30,524] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 14:46:30,567] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 14:46:31,279] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 14:46:31,295] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 14:46:34,646] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:46:34] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 14:46:45,046] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:46:45] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 14:47:27,901] {register:121} INFO - {'code': 400, 'field': 'Password', 'message': 'Field must be at least 5 characters long.', 'status': 'fail'} 
+[2017-05-17 14:47:27,913] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:47:27] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 14:48:06,057] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 14:48:06,118] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 14:49:22,265] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-17 14:49:22,267] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 14:49:22,775] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 14:49:22,792] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 14:49:25,716] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:49:25] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 14:49:39,211] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:49:39] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 14:50:04,106] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 14:50:04,151] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 14:50:04,826] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 14:50:04,838] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 14:50:08,889] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 14:50:08,937] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 14:50:09,436] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 14:50:09,446] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 14:56:51,788] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 14:56:52,000] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 14:56:52,708] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 14:56:52,723] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 14:59:06,762] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 14:59:06,808] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 14:59:49,135] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-17 14:59:49,136] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 14:59:49,661] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 14:59:49,675] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 14:59:54,202] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:59:54] "GET / HTTP/1.1" 200 - 
+[2017-05-17 14:59:57,251] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 14:59:57] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:00:08,696] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:00:08] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:00:51,042] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:00:51] "GET / HTTP/1.1" 200 - 
+[2017-05-17 15:06:43,733] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 15:06:43,794] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:06:44,646] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:06:44,663] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:06:46,422] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:06:46] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:07:08,868] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 15:07:08,932] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:07:09,615] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:07:09,627] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:11:08,617] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 15:11:08,686] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:11:09,424] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:11:09,439] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:11:50,787] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 15:11:50,834] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:11:51,359] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:11:51,370] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:11:54,403] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 15:11:54,440] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:11:55,221] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:11:55,236] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:12:01,864] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:12:01] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:12:09,419] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:12:09] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:12:19,410] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:12:19] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:12:25,542] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:12:25] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:13:08,584] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:13:08] "GET / HTTP/1.1" 200 - 
+[2017-05-17 15:13:20,095] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:13:20] "GET /backend HTTP/1.1" 200 - 
+[2017-05-17 15:13:21,682] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:13:21] "GET /about HTTP/1.1" 200 - 
+[2017-05-17 15:14:00,609] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:14:00] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:14:04,864] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:14:04] "GET / HTTP/1.1" 200 - 
+[2017-05-17 15:14:21,564] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:14:21] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:15:06,457] {login:99} ERROR - [Errno 54] Connection reset by peer 
+[2017-05-17 15:15:06,471] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:15:06] "POST /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:15:26,069] {login:46} INFO - {'code': 200, 'data': {'confirmed': True, 'created_at': '2017-05-17T15:15:25.703522', 'email': 'youngtip@gmail.com', 'expired_at': '2017-11-13T15:15:25.703522', 'is_active': True, 'scheme': 'bearer', 'token': '3e327fc92f3aeffeea5af3ef52aad92de4a30eacde9302970d64d8e20a05ff5fe371837535c36c08da77a3c904d29b5a', 'user_id': 13, 'username': 'youngsoonn,lee'}, 'status': 'success'} 
+[2017-05-17 15:15:26,070] {login:49} INFO - login time >> 7.133191108703613 
+[2017-05-17 15:15:26,072] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:15:26] "POST /account/login HTTP/1.1" 302 - 
+[2017-05-17 15:15:26,092] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:15:26] "GET / HTTP/1.1" 200 - 
+[2017-05-17 15:15:28,268] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:15:28] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-17 15:16:00,527] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:16:00] "GET /account/manage/info HTTP/1.1" 200 - 
+[2017-05-17 15:16:03,086] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:16:03] "GET /account/manage/change-email HTTP/1.1" 200 - 
+[2017-05-17 15:16:13,233] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:16:13] "GET /account/logout HTTP/1.1" 302 - 
+[2017-05-17 15:16:13,250] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:16:13] "GET / HTTP/1.1" 200 - 
+[2017-05-17 15:16:24,654] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:16:24] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:16:39,048] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:16:39] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:17:52,376] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 15:17:52,447] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:17:53,488] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:17:53,547] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:17:57,979] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:17:57] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:18:00,951] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:18:00] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:18:02,192] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:18:02] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:18:11,986] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:18:11] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:18:41,968] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 15:18:42,087] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:18:42,917] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:18:42,941] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:20:46,014] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 15:20:46,104] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:20:46,811] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:20:46,825] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:22:43,921] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 15:22:44,015] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:22:44,830] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:22:44,846] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:22:54,943] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 15:22:55,017] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:22:55,949] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:22:55,970] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:25:08,231] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 15:25:08,305] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:25:09,318] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:25:09,331] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:25:30,552] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 15:25:30,592] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:25:31,139] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:25:31,150] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:26:07,004] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:26:07] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:26:10,356] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:26:10] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:26:11,452] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:26:11] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:26:24,840] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:26:24] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:26:56,918] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/app/account/forms.py', reloading 
+[2017-05-17 15:26:56,978] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:26:57,697] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:26:57,710] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:27:03,143] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:27:03] "GET /backend HTTP/1.1" 200 - 
+[2017-05-17 15:27:05,176] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:27:05] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:27:16,417] {register:121} INFO - {'code': 201, 'id': 18, 'status': 'success'} 
+[2017-05-17 15:27:16,423] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:27:16] "POST /account/register HTTP/1.1" 302 - 
+[2017-05-17 15:27:16,450] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:27:16] "GET / HTTP/1.1" 200 - 
+[2017-05-17 15:27:17,801] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:27:17] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-17 15:27:43,689] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:27:43] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:27:55,485] {register:121} INFO - {'code': 400, 'field': 'User Name', 'message': "'youngtip' is already exists.", 'status': 'fail'} 
+[2017-05-17 15:27:55,493] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:27:55] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:28:03,565] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:03] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:28:11,712] {login:46} INFO - {'code': 200, 'data': {'confirmed': False, 'created_at': '2017-05-17T15:28:11.301950', 'email': 'youngtip@gmail.com', 'expired_at': '2017-11-13T15:28:11.301950', 'is_active': True, 'scheme': 'bearer', 'token': '5f4bde56dc260559ce8d3d404e83d920cacf8c959c9befae19a189170f9fe0250cdbd8a5cb617169e7838dddf8fcfed1', 'user_id': 18, 'username': 'youngtip'}, 'status': 'success'} 
+[2017-05-17 15:28:11,712] {login:49} INFO - login time >> 2.0848891735076904 
+[2017-05-17 15:28:11,714] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:11] "POST /account/login HTTP/1.1" 302 - 
+[2017-05-17 15:28:11,724] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:11] "GET / HTTP/1.1" 302 - 
+[2017-05-17 15:28:11,743] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:11] "GET /account/unconfirmed HTTP/1.1" 200 - 
+[2017-05-17 15:28:12,859] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:12] "GET /favicon.ico HTTP/1.1" 302 - 
+[2017-05-17 15:28:12,879] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:12] "GET /account/unconfirmed HTTP/1.1" 200 - 
+[2017-05-17 15:28:19,380] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:19] "GET / HTTP/1.1" 302 - 
+[2017-05-17 15:28:19,401] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:19] "GET /account/unconfirmed HTTP/1.1" 200 - 
+[2017-05-17 15:28:21,692] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:21] "GET /backend HTTP/1.1" 302 - 
+[2017-05-17 15:28:21,718] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:21] "GET /account/unconfirmed HTTP/1.1" 200 - 
+[2017-05-17 15:28:23,082] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:23] "GET /about HTTP/1.1" 302 - 
+[2017-05-17 15:28:23,105] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:23] "GET /account/unconfirmed HTTP/1.1" 200 - 
+[2017-05-17 15:28:24,738] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:24] "GET /account/manage/info HTTP/1.1" 200 - 
+[2017-05-17 15:28:29,461] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:28:29] "GET /account/manage/change-email HTTP/1.1" 200 - 
+[2017-05-17 15:30:06,240] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/config.py', reloading 
+[2017-05-17 15:30:06,300] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:30:58,910] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-17 15:30:58,911] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:30:59,444] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:30:59,460] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:32:05,574] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:32:05] "GET /account/logout HTTP/1.1" 302 - 
+[2017-05-17 15:32:05,654] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:32:05] "GET / HTTP/1.1" 200 - 
+[2017-05-17 15:32:09,096] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:32:09] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:32:19,145] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:32:19] "POST /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:32:26,322] {register:121} INFO - {'code': 201, 'id': 20, 'status': 'success'} 
+[2017-05-17 15:32:26,329] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:32:26] "POST /account/register HTTP/1.1" 302 - 
+[2017-05-17 15:32:26,354] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:32:26] "GET / HTTP/1.1" 200 - 
+[2017-05-17 15:32:27,513] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:32:27] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-17 15:33:49,554] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-17 15:33:49,556] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:33:50,049] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:33:50,063] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:34:01,907] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:34:01] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:34:12,059] {login:46} INFO - {'code': 400, 'message': 'User does not exist or the password does not match.', 'status': 'fail'} 
+[2017-05-17 15:34:12,059] {login:49} INFO - login time >> 0.6041660308837891 
+[2017-05-17 15:34:12,071] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:34:12] "POST /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:34:17,954] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:34:17] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:34:28,091] {register:121} INFO - {'code': 201, 'id': 21, 'status': 'success'} 
+[2017-05-17 15:34:28,097] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:34:28] "POST /account/register HTTP/1.1" 302 - 
+[2017-05-17 15:34:28,134] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:34:28] "GET / HTTP/1.1" 200 - 
+[2017-05-17 15:34:29,238] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:34:29] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-17 15:36:16,252] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/config.py', reloading 
+[2017-05-17 15:36:16,317] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:36:17,199] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:36:17,216] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:36:22,887] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-17 15:36:22,888] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:36:23,492] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:36:23,506] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:36:26,602] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:36:26] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:36:28,544] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:36:28] "GET /account/reset-password HTTP/1.1" 200 - 
+[2017-05-17 15:36:34,153] {reset_password_request:203} INFO - {'code': 200, 'data': {'confirmed': False, 'created_at': '2017-05-17T15:34:26.935357', 'email': 'youngtip@gmail.com', 'id': 21, 'is_active': True, 'permission': 'USER', 'updated_at': None, 'username': 'youngtip'}, 'status': 'success'} 
+[2017-05-17 15:36:34,160] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:36:34] "POST /account/reset-password HTTP/1.1" 302 - 
+[2017-05-17 15:36:34,190] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:36:34] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:36:44,764] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/config.py', reloading 
+[2017-05-17 15:36:44,828] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:36:45,559] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:36:45,572] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:39:53,298] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-17 15:39:53,299] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:39:53,833] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:39:53,847] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:40:02,585] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:40:02] "GET /account/reset-password HTTP/1.1" 200 - 
+[2017-05-17 15:40:09,234] {reset_password_request:203} INFO - {'code': 200, 'data': {'confirmed': False, 'created_at': '2017-05-17T15:34:26.935357', 'email': 'youngtip@gmail.com', 'id': 21, 'is_active': True, 'permission': 'USER', 'updated_at': None, 'username': 'youngtip'}, 'status': 'success'} 
+[2017-05-17 15:40:09,448] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:40:09] "POST /account/reset-password HTTP/1.1" 302 - 
+[2017-05-17 15:40:09,475] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:40:09] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:41:20,576] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/config.py', reloading 
+[2017-05-17 15:41:20,652] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:41:21,510] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:41:21,527] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:41:37,685] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-17 15:41:37,686] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:41:38,193] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:41:38,205] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:41:42,550] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:41:42] "GET /account/reset-password HTTP/1.1" 200 - 
+[2017-05-17 15:41:49,044] {reset_password_request:203} INFO - {'code': 200, 'data': {'confirmed': False, 'created_at': '2017-05-17T15:34:26.935357', 'email': 'youngtip@gmail.com', 'id': 21, 'is_active': True, 'permission': 'USER', 'updated_at': None, 'username': 'youngtip'}, 'status': 'success'} 
+[2017-05-17 15:41:49,058] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:41:49] "POST /account/reset-password HTTP/1.1" 302 - 
+[2017-05-17 15:41:49,085] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:41:49] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:43:53,342] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/config.py', reloading 
+[2017-05-17 15:43:53,407] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:43:54,154] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:43:54,167] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:46:50,577] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-17 15:46:50,578] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:46:51,176] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:46:51,192] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:47:12,100] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:47:12] "GET /account/reset-password HTTP/1.1" 200 - 
+[2017-05-17 15:47:18,601] {reset_password_request:203} INFO - {'code': 200, 'data': {'confirmed': False, 'created_at': '2017-05-17T15:34:26.935357', 'email': 'youngtip@gmail.com', 'id': 21, 'is_active': True, 'permission': 'USER', 'updated_at': None, 'username': 'youngtip'}, 'status': 'success'} 
+[2017-05-17 15:47:18,620] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:47:18] "POST /account/reset-password HTTP/1.1" 302 - 
+[2017-05-17 15:47:18,648] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:47:18] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:48:02,764] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/config.py', reloading 
+[2017-05-17 15:48:02,801] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:48:03,464] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:48:03,476] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:48:24,813] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:48:24] "GET /account/reset-password HTTP/1.1" 200 - 
+[2017-05-17 15:48:31,610] {reset_password_request:203} INFO - {'code': 200, 'data': {'confirmed': False, 'created_at': '2017-05-17T15:34:26.935357', 'email': 'youngtip@gmail.com', 'id': 21, 'is_active': True, 'permission': 'USER', 'updated_at': None, 'username': 'youngtip'}, 'status': 'success'} 
+[2017-05-17 15:48:31,621] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:48:31] "POST /account/reset-password HTTP/1.1" 302 - 
+[2017-05-17 15:48:31,664] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:48:31] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:49:38,439] {_log:87} INFO -  * Detected change in '/Users/leeyoungsoon/my_task/my_bolierplate/front_flask/flask/config.py', reloading 
+[2017-05-17 15:49:38,505] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:49:39,370] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:49:39,386] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:49:53,725] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-17 15:49:53,726] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:49:54,245] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:49:54,256] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:51:02,534] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-17 15:51:02,536] {_log:87} INFO -  * Restarting with stat 
+[2017-05-17 15:51:03,063] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-17 15:51:03,089] {_log:87} INFO -  * Debugger PIN: 133-044-709 
+[2017-05-17 15:51:14,029] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:51:14] "GET /account/reset-password HTTP/1.1" 200 - 
+[2017-05-17 15:51:20,675] {reset_password_request:203} INFO - {'code': 200, 'data': {'confirmed': False, 'created_at': '2017-05-17T15:34:26.935357', 'email': 'youngtip@gmail.com', 'id': 21, 'is_active': True, 'permission': 'USER', 'updated_at': None, 'username': 'youngtip'}, 'status': 'success'} 
+[2017-05-17 15:51:20,681] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:51:20] "POST /account/reset-password HTTP/1.1" 302 - 
+[2017-05-17 15:51:20,714] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:51:20] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-17 15:52:15,930] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:52:15] "GET /account/register HTTP/1.1" 200 - 
+[2017-05-17 15:52:27,817] {register:121} INFO - {'code': 201, 'id': 22, 'status': 'success'} 
+[2017-05-17 15:52:27,822] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:52:27] "POST /account/register HTTP/1.1" 302 - 
+[2017-05-17 15:52:27,847] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:52:27] "GET / HTTP/1.1" 200 - 
+[2017-05-17 15:52:29,126] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:52:29] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-17 15:52:38,758] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:52:38] "GET /backend HTTP/1.1" 200 - 
+[2017-05-17 15:52:39,845] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:52:39] "GET /about HTTP/1.1" 200 - 
+[2017-05-17 15:52:41,301] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:52:41] "GET / HTTP/1.1" 200 - 
+[2017-05-17 15:52:55,885] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:52:55] "GET /account/confirm-account/eyJhbGciOiJIUzI1NiIsImlhdCI6MTQ5NTA2MTU0NywiZXhwIjoxNDk1NjY2MzQ3fQ.eyJjb25maXJtIjoyMn0.xbNkCdkRPdpLoMVxFA1DXhnywxxMWX_mgE2XHWllF5Q HTTP/1.1" 302 - 
+[2017-05-17 15:52:55,900] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:52:55] "GET /account/login?next=%2Faccount%2Fconfirm-account%2FeyJhbGciOiJIUzI1NiIsImlhdCI6MTQ5NTA2MTU0NywiZXhwIjoxNDk1NjY2MzQ3fQ.eyJjb25maXJtIjoyMn0.xbNkCdkRPdpLoMVxFA1DXhnywxxMWX_mgE2XHWllF5Q HTTP/1.1" 200 - 
+[2017-05-17 15:53:08,402] {login:46} INFO - {'code': 200, 'data': {'confirmed': False, 'created_at': '2017-05-17T15:53:07.971607', 'email': 'youngtip@gmail.com', 'expired_at': '2017-11-13T15:53:07.971607', 'is_active': True, 'scheme': 'bearer', 'token': 'cfc9661b5a7c25bb384d5dbb837a0aa5e4d88903ea9cd44e31a0ff9f63f8f21606d7f197a92eca1282f35a792f0d27fe', 'user_id': 22, 'username': 'youngtip'}, 'status': 'success'} 
+[2017-05-17 15:53:08,410] {login:49} INFO - login time >> 2.144995927810669 
+[2017-05-17 15:53:08,412] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:53:08] "POST /account/login?next=%2Faccount%2Fconfirm-account%2FeyJhbGciOiJIUzI1NiIsImlhdCI6MTQ5NTA2MTU0NywiZXhwIjoxNDk1NjY2MzQ3fQ.eyJjb25maXJtIjoyMn0.xbNkCdkRPdpLoMVxFA1DXhnywxxMWX_mgE2XHWllF5Q HTTP/1.1" 302 - 
+[2017-05-17 15:53:10,244] {confirm_account:69} INFO - {'code': 200, 'data': {'confirmed': True, 'created_at': '2017-05-17T15:53:09.833439', 'email': 'youngtip@gmail.com', 'expired_at': '2017-11-13T15:53:09.833439', 'is_active': True, 'scheme': 'bearer', 'token': '21f2462d3ee9b3427b2a5e8d75224eeeaaa9e1b8f54edcae097be5659bc71475913efb76f60dfc9ea959eb3ebfd9bc77', 'user_id': 22, 'username': 'youngtip'}, 'status': 'success'} 
+[2017-05-17 15:53:10,246] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:53:10] "GET /account/confirm-account/eyJhbGciOiJIUzI1NiIsImlhdCI6MTQ5NTA2MTU0NywiZXhwIjoxNDk1NjY2MzQ3fQ.eyJjb25maXJtIjoyMn0.xbNkCdkRPdpLoMVxFA1DXhnywxxMWX_mgE2XHWllF5Q HTTP/1.1" 302 - 
+[2017-05-17 15:53:10,267] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:53:10] "GET / HTTP/1.1" 200 - 
+[2017-05-17 15:53:11,956] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:53:11] "GET /favicon.ico HTTP/1.1" 404 - 
+[2017-05-17 15:53:16,770] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:53:16] "GET /account/manage/info HTTP/1.1" 200 - 
+[2017-05-17 15:53:19,140] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:53:19] "GET /account/manage/change-email HTTP/1.1" 200 - 
+[2017-05-17 15:53:28,167] {change_email_request:341} INFO - {'code': 400, 'field': 'New email', 'message': "'youngtip@gmail.com' is already exists.", 'status': 'fail'} 
+[2017-05-17 15:53:28,167] {change_email_request:344} INFO - change email start time5 >> 2.1748268604278564 
+[2017-05-17 15:53:28,174] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 15:53:28] "POST /account/manage/change-email HTTP/1.1" 200 - 

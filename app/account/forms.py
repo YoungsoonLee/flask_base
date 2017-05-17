@@ -4,7 +4,7 @@ from wtforms import ValidationError
 from wtforms.fields import (BooleanField, PasswordField, StringField,
                             SubmitField)
 from wtforms.fields.html5 import EmailField
-from wtforms.validators import Email, EqualTo, InputRequired, Length
+from wtforms.validators import Email, EqualTo, InputRequired, Length, Regexp
 
 # from ..models import User
 
@@ -16,15 +16,26 @@ class LoginForm(FlaskForm):
 
 
 class RegistrationForm(FlaskForm):
-    first_name = StringField('First name', validators=[InputRequired(), Length(1, 64)])
-    last_name = StringField('Last name', validators=[InputRequired(), Length(1, 64)])
-    # email = StringField('Email', validators=[InputRequired(), Length(1, 64), Email()])
+    nickname = StringField('Nick name', validators=[
+        InputRequired(), 
+        Length(5, 20),
+        Regexp('^\w+$', message="Nickname must contain only letters numbers or underscore"),
+        ])
+    # first_name = StringField('First name', validators=[InputRequired(), Length(1, 64)])
+    # last_name = StringField('Last name', validators=[InputRequired(), Length(1, 64)])
+    """
+    email = StringField('Email', validators=[
+        InputRequired(), 
+        Length(1, 64), 
+        Regexp("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b", message="You should input email")])
+        """
     email = EmailField('Email', validators=[InputRequired(), Length(1, 64), Email()])
     password = PasswordField(
         'Password',
         validators=[
-            InputRequired(), EqualTo('password2', 'Passwords must match')
-        ])
+            InputRequired(), EqualTo('password2', 'Passwords must match'), Length(5, 32)
+        ]
+        )
     password2 = PasswordField('Confirm password', validators=[InputRequired()])
     submit = SubmitField('Register')
 

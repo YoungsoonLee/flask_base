@@ -111,7 +111,7 @@ def register():
         url = backend_url+'users'
         data = {
                 'email': form.email.data,
-                'username': form.first_name.data+','+form.last_name.data,
+                'username': form.nickname.data,
                 'password': form.password.data
                 }
         try:
@@ -129,7 +129,7 @@ def register():
                     # for send mail
                     user = User(
                         id = r['id'],
-                        username=form.first_name.data+','+form.last_name.data
+                        username=form.nickname.data
                     )
                 
                     confirm_token = user.generate_confirmation_token()
