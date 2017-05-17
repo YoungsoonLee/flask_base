@@ -380,6 +380,7 @@ def change_email_request():
 @login_required
 def change_email(token):
     """Change existing user's email with provided token."""
+    # TODO: !!!!
     if current_user.change_email(token):
         flash('Your email address has been updated.', 'success')
     else:

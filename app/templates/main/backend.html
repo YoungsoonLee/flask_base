@@ -1,0 +1,33 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    <div class="ui text container">
+      <h1>Hello {% if not (current_user.is_authenticated) %} world {% else %} {{ current_user.username }} {% endif %},</h1>
+
+        <div class="ui comments">
+            <div class="comment">
+
+                <div class="ui blue segment">
+                  <h4 class="ui header">Backend API for game</h4>
+                  <div class="ui bulleted list">
+
+                    <div class="item">
+                      <div>support all front</div>
+                    </div>
+
+                     <div class="item">
+                      <div>for game</div>
+                      <div class="ui fitted divider"></div>
+                      <div class="list">
+                        <div class="item">write todo :) </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

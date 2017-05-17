@@ -14,3 +14,10 @@ def about():
     # editable_html_obj = EditableHTML.get_editable_html('about')
     # return render_template('main/about.html', editable_html_obj=editable_html_obj)
     return render_template('main/about.html')
+
+
+@main.route('/backend')
+def backend():
+    # editable_html_obj = EditableHTML.get_editable_html('about')
+    # return render_template('main/about.html', editable_html_obj=editable_html_obj)
+    return render_template('main/backend.html')

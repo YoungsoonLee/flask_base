@@ -22,6 +22,7 @@
 {% macro header_items(current_user) %}
     {% set endpoints = [
       ('main.index', config.APP_NAME, 'home'),
+      ('main.backend', 'Backend API for game', 'game'),
       ('main.about', 'About', 'info')
     ]%}
     {% set user = [] %}
