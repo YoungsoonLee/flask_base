@@ -1,3 +1,4 @@
 /* redis: redis-server */
-web: python3 -u manage.py runserver
+/* web: python3 -u manage.py runserver */
+web: gunicorn -b 127.0.0.1:7000 manage:app
 worker: python3 -u manage.py run_worker

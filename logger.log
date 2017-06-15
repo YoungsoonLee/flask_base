@@ -11792,3 +11792,45 @@
 [2017-05-17 21:59:22,009] {_log:87} WARNING -  * Debugger is active! 
 [2017-05-17 21:59:22,028] {_log:87} INFO -  * Debugger PIN: 133-044-709 
 [2017-05-17 21:59:27,147] {_log:87} INFO - 127.0.0.1 - - [17/May/2017 21:59:27] "GET /account/login HTTP/1.1" 200 - 
+[2017-05-19 12:34:24,873] {login:99} ERROR - Expecting value: line 1 column 1 (char 0) 
+[2017-05-20 11:24:59,925] {login:46} INFO - {'code': 200, 'data': {'confirmed': True, 'created_at': '2017-05-20T11:24:59.572187', 'email': 'youngtip@gmail.com', 'expired_at': '2017-11-16T11:24:59.572187', 'is_active': True, 'scheme': 'bearer', 'token': 'e44affb6a42c8853897c5c6f42e03630232782b6215a4a3d9ca4a50b648f6fcef33a096e08092d80a79616d44d620189', 'user_id': 22, 'username': 'youngtip'}, 'status': 'success'} 
+[2017-05-20 11:24:59,937] {login:49} INFO - login time >> 1.8457438945770264 
+[2017-05-20 11:28:14,407] {login:99} ERROR - Expecting value: line 1 column 1 (char 0) 
+[2017-05-24 11:48:36,032] {login:46} INFO - {'code': 200, 'status': 'success', 'data': {'user_id': 1, 'username': 'youngtip', 'email': 'youngtip@gmail.com', 'created_at': '2017-05-24T11:48:35.620070', 'expired_at': '2017-11-20T11:48:35.620070', 'scheme': 'bearer', 'confirmed': False, 'is_active': True, 'token': '4dd33055a68f2e2c1660554056be76442e1efddf7086558ea3e487d4c7224328f2d92a02c8f43e8ed3cdd0d95971a667'}} 
+[2017-05-24 11:48:36,043] {login:49} INFO - login time >> 5.941525936126709 
+[2017-05-24 11:49:02,089] {login:46} INFO - {'code': 200, 'status': 'success', 'data': {'user_id': 1, 'username': 'youngtip', 'email': 'youngtip@gmail.com', 'created_at': '2017-05-24T11:49:01.767083', 'expired_at': '2017-11-20T11:49:01.767083', 'scheme': 'bearer', 'confirmed': False, 'is_active': True, 'token': 'b8c2144b04d331ff34bf36d5e5c3da5e33705d29ae0280691462fc36c828cec297756e6f24289148b1629bdbd60514b7'}} 
+[2017-05-24 11:49:02,090] {login:49} INFO - login time >> 2.022784948348999 
+[2017-05-24 11:51:03,727] {login:46} INFO - {'code': 200, 'status': 'success', 'data': {'user_id': 1, 'username': 'youngtip', 'email': 'youngtip@gmail.com', 'created_at': '2017-05-24T11:51:03.316760', 'expired_at': '2017-11-20T11:51:03.316760', 'scheme': 'bearer', 'confirmed': True, 'is_active': True, 'token': '42a2a210c9502c68007a42e61f114cf087dca104e0021a13ae7c2cd0742f48124f75f6926f857b42fdf8a91b97a96a6a'}} 
+[2017-05-24 11:51:03,728] {login:49} INFO - login time >> 2.060945749282837 
+[2017-05-24 14:21:10,102] {login:46} INFO - {'code': 200, 'status': 'success', 'data': {'user_id': 1, 'username': 'youngtip', 'email': 'youngtip@gmail.com', 'created_at': '2017-05-24T14:21:09.696665', 'expired_at': '2017-11-20T14:21:09.696665', 'scheme': 'bearer', 'confirmed': True, 'is_active': True, 'token': 'a8b2e17dc483822e6699b963c9d7de5d65491cc23f404a474ca59d54730d4a7ee64d2b17c2ef768c699c2ec47890a3e9'}} 
+[2017-05-24 14:21:10,111] {login:49} INFO - login time >> 5.791006088256836 
+[2017-05-24 14:21:53,629] {register:121} INFO - {'code': 201, 'status': 'success', 'id': 3} 
+[2017-05-24 14:22:38,060] {login:46} INFO - {'code': 200, 'status': 'success', 'data': {'user_id': 1, 'username': 'youngtip', 'email': 'youngtip@gmail.com', 'created_at': '2017-05-24T14:22:37.647973', 'expired_at': '2017-11-20T14:22:37.647973', 'scheme': 'bearer', 'confirmed': True, 'is_active': True, 'token': 'ece0cf9abc2024bc96dab79cb0fb25493e9c32b76476d0433c74c81c1f3f28bd21803ad210d07f9a4da264cf451d3d67'}} 
+[2017-05-24 14:22:38,060] {login:49} INFO - login time >> 2.1310200691223145 
+[2017-05-24 14:22:58,914] {login:46} INFO - {'code': 200, 'status': 'success', 'data': {'user_id': 3, 'username': 'youngtip2', 'email': 'youngtipkr@gmail.com', 'created_at': '2017-05-24T14:22:58.537129', 'expired_at': '2017-11-20T14:22:58.537129', 'scheme': 'bearer', 'confirmed': False, 'is_active': True, 'token': '6e7eba460be01dd3a9e72342896e7c6e04cf9d3ba90f090be18f0ca858c7a377c11eb25298fa8ec970c93a2c7ca4360d'}} 
+[2017-05-24 14:22:58,914] {login:49} INFO - login time >> 2.056084156036377 
+[2017-05-24 14:23:00,793] {confirm_account:69} INFO - {'code': 200, 'status': 'success', 'data': {'user_id': 3, 'username': 'youngtip2', 'email': 'youngtipkr@gmail.com', 'created_at': '2017-05-24T14:23:00.380227', 'expired_at': '2017-11-20T14:23:00.380227', 'scheme': 'bearer', 'confirmed': True, 'is_active': True, 'token': '3a54db088abc83150080a6a385d59703ade34332b1c391d4da1c9651c5058b597d664ca8e33b825ca8fce1d3ad003320'}} 
+[2017-05-24 15:41:52,289] {login:46} INFO - {'code': 200, 'status': 'success', 'data': {'user_id': 1, 'username': 'youngtip', 'email': 'youngtip@gmail.com', 'created_at': '2017-05-24T15:41:51.953621', 'expired_at': '2017-11-20T15:41:51.953621', 'scheme': 'bearer', 'confirmed': True, 'is_active': True, 'token': '9dae9e6971bb1f1ab2da6831c88289be005e40f4c8f20facd38876554a0aa0ce70ed41bebd4e9ce87b1f455ff96c89a7'}} 
+[2017-05-24 15:41:52,297] {login:49} INFO - login time >> 5.706626653671265 
+[2017-05-24 15:42:07,768] {login:46} INFO - {'code': 200, 'status': 'success', 'data': {'user_id': 1, 'username': 'youngtip', 'email': 'youngtip@gmail.com', 'created_at': '2017-05-24T15:42:07.313986', 'expired_at': '2017-11-20T15:42:07.313986', 'scheme': 'bearer', 'confirmed': True, 'is_active': True, 'token': 'a5dcdb1f49aa8071c45e8181fad96343b608ba2a6d4621d43bd85873a468d08b20d6cec2e07632e780259bd0b7ec396b'}} 
+[2017-05-24 15:42:07,770] {login:49} INFO - login time >> 2.0057101249694824 
+[2017-05-24 15:42:23,462] {login:46} INFO - {'code': 200, 'status': 'success', 'data': {'user_id': 1, 'username': 'youngtip', 'email': 'youngtip@gmail.com', 'created_at': '2017-05-24T15:42:23.137766', 'expired_at': '2017-11-20T15:42:23.137766', 'scheme': 'bearer', 'confirmed': True, 'is_active': True, 'token': 'dfdcb33bb187af1d6dc375c39f4591a8a4d4f3cee43e48e61d17b3ae41752290c55ea8be455ca5f4f2ca4c3f9cd9cdc9'}} 
+[2017-05-24 15:42:23,464] {login:49} INFO - login time >> 2.0090749263763428 
+[2017-05-25 09:32:52,748] {login:46} INFO - {'code': 200, 'status': 'success', 'data': {'user_id': 1, 'username': 'youngtip', 'email': 'youngtip@gmail.com', 'created_at': '2017-05-25T09:32:52.421206', 'expired_at': '2017-11-21T09:32:52.421206', 'scheme': 'bearer', 'confirmed': True, 'is_active': True, 'token': '5d760969b417263f09dcab03b792979ff580ac6cb15fd656cc4ad99417831039c7ed4cbfec7b40938c35602247d5c818'}} 
+[2017-05-25 09:32:52,755] {login:49} INFO - login time >> 5.743865728378296 
+[2017-05-25 09:33:23,996] {reset_password_request:203} INFO - {'code': 200, 'status': 'success', 'data': {'id': 1, 'username': 'youngtip', 'email': 'youngtip@gmail.com', 'permission': 'USER', 'confirmed': True, 'updated_at': None, 'is_active': True, 'created_at': '2017-05-20T22:40:13.944459'}} 
+[2017-05-29 17:34:39,801] {_log:87} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+[2017-05-29 17:34:39,810] {_log:87} INFO -  * Restarting with stat 
+[2017-05-29 17:34:40,336] {_log:87} WARNING -  * Debugger is active! 
+[2017-05-29 17:34:40,356] {_log:87} INFO -  * Debugger PIN: 196-193-401 
+[2017-05-29 17:34:45,138] {_log:87} INFO - 127.0.0.1 - - [29/May/2017 17:34:45] "GET / HTTP/1.1" 200 - 
+[2017-05-29 17:34:45,199] {_log:87} INFO - 127.0.0.1 - - [29/May/2017 17:34:45] "GET /static/webassets-external/5dd883c6ee339c23bcfffff1d4228504_semantic.min.css HTTP/1.1" 200 - 
+[2017-05-29 17:34:45,208] {_log:87} INFO - 127.0.0.1 - - [29/May/2017 17:34:45] "GET /static/styles/app.css?873aca08 HTTP/1.1" 200 - 
+[2017-05-29 17:34:45,223] {_log:87} INFO - 127.0.0.1 - - [29/May/2017 17:34:45] "GET /static/webassets-external/72dd50c6564fbde65fcf3f9ad94867a9_jquery.min.js HTTP/1.1" 200 - 
+[2017-05-29 17:34:45,273] {_log:87} INFO - 127.0.0.1 - - [29/May/2017 17:34:45] "GET /static/webassets-external/91b663f2cc83069f49334aaa7d6ee4b4_semantic.min.js HTTP/1.1" 200 - 
+[2017-05-29 17:34:45,277] {_log:87} INFO - 127.0.0.1 - - [29/May/2017 17:34:45] "GET /static/webassets-external/1209026b953d869dc4209ff8f8f60e83_tablesort.min.js HTTP/1.1" 200 - 
+[2017-05-29 17:34:45,359] {_log:87} INFO - 127.0.0.1 - - [29/May/2017 17:34:45] "GET /static/webassets-external/64562065f0db002fb4c90bd2b983c6b8_zxcvbn.js HTTP/1.1" 200 - 
+[2017-05-29 17:34:45,364] {_log:87} INFO - 127.0.0.1 - - [29/May/2017 17:34:45] "GET /static/webassets-external/73d51e3f71bf90a6fd1c6955bdbb1472_app.js HTTP/1.1" 200 - 
+[2017-05-29 17:34:46,652] {_log:87} INFO - 127.0.0.1 - - [29/May/2017 17:34:46] "GET /static/fonts/vendor/semantic/icons.woff2 HTTP/1.1" 200 - 
+[2017-05-29 17:37:23,462] {login:46} INFO - {'code': 200, 'status': 'success', 'data': {'user_id': 1, 'username': 'youngtip', 'email': 'youngtip@gmail.com', 'created_at': '2017-05-29T17:37:23.092978', 'expired_at': '2017-11-25T17:37:23.092978', 'scheme': 'bearer', 'confirmed': True, 'is_active': True, 'token': '2000035a731b33b4d88ab78523f32c7c11b529c1e715fc9c91bf8033f7f07c176dd189e49b6bb3e9b0ae6100ad7880e6'}} 
+[2017-05-29 17:37:23,464] {login:49} INFO - login time >> 5.745898008346558 
