@@ -21,7 +21,7 @@ gunicorn==19.7.1
 honcho==1.0.1
 httplib2==0.10.3
 itsdangerous==0.24
-Jinja2==2.9.6
+Jinja2==2.11.3
 MarkupSafe==1.0
 packaging==16.8
 pycrypto==2.6.1
